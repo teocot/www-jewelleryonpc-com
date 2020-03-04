@@ -1,0 +1,195 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AppMaster.master.cs" Inherits="jewelleryonpc.AppMaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head runat="server">
+	<title>Jewellery design, 3D birthstone rings</title>	
+	<meta name="description" content="Jewellery design 3D software with birthstone gems, 
+simple to use and affordable." />
+	<meta name="keywords" content="jewellery, jewelry, diamond, engagement diamond ring, 
+engagement ring, jewellery design, birthstone jewelry, emerald, garnet, ruby, sapphire, 
+tourmaline, amethyst, aquamarine, alexandrite, citrine, topaz, blue topaz, brilliant, 
+emerald cut, cushion, step cut, square cut, european cut, marquise, oval cat, pear shape, 
+radiant cut, table cut, bezel setting, claw setting, end setting, gold, rose gold, 
+gold yellow, sterling silver gold, platinium, platinum, silver, 3d design software, 
+jewelery design, jewellery design, jewellry design, jewelry design,
+jewellery design software, ring design, birthstone gems, birthstone january, 
+birthstone february, birthstone march, birthstone april, birthstone may, 
+birthstone june, birthstone july, birthstone august, birthstone september,
+birthstone october, birthstone november, birthstone december" />
+	
+</head>
+<body>
+	<form id="mainForm" runat="server">
+		<div id="wrapper">
+			<div id="header">
+				<div id="logo">=
+					<asp:HyperLink ID="lnkHome" runat="server" ToolTip="Return to homepage" NavigateUrl="~/Default.aspx" SkinID="lnkHome" ImageUrl="~/App_Themes/Granite/Images/logo.gif">[lnkHome]</asp:HyperLink>
+				</div>
+				<div id="banner">
+					<%-- Put a banner here if you wish. --%>
+				</div>
+				<!--
+				<div id="search">
+					<asp:Label runat="server" ID="lblSearch" AssociatedControlID="txtSearch" style="display:none;" Text="Search:" />
+					<asp:TextBox ID="txtSearch" SkinID="searchBox" runat="server" AccessKey="s" TabIndex="50"></asp:TextBox>&nbsp;
+					<asp:Button ID="btnSearch" SkinID="searchButton" runat="server" AccessKey="c" Text="Search" TabIndex="51" />
+				</div>
+				-->
+			</div>
+			<div id="mainnav">
+				<asp:SiteMapDataSource runat="server" ID="sitemap" />
+				<asp:Menu DataSourceID="sitemap" ID="mainmenu" SkinID="mainmenu" runat="server" OnMenuItemDataBound="MainMenu_MenuItemDataBound" />			
+			</div>
+			<div id="contentwrapper">
+				<div id="floatwrapper">
+					<div id="centercolumn">
+						<div id="breadcrumbs">
+							<asp:SiteMapPath runat="server" ID="smPath" />
+						</div>
+						<div id="copy">
+							<asp:ContentPlaceHolder runat="server" ID="mainCopy">
+							    <%-- Main page content goes here. Create a single 
+							    content box by wrapping everything in one 
+							    <div class="container"> or create multiple boxes 
+							    as needed. See the sample homepage for a 
+							    demonstration. 
+							    
+							    This is the general structure:
+							    <div class="container">
+                                    <h1>Headline</h1>
+                                    <p class="teaser">Teaser text</p>
+                                    <p>Regular text and other markup.</p>
+                                </div>							    
+							    --%>								
+							</asp:ContentPlaceHolder>
+						</div>
+					</div>
+					<div id="leftcolumn">
+						<div id="leftcolcontainer">
+							<div id="subnav">	
+								<asp:SiteMapDataSource runat="server" ID="subnavSitemap" StartingNodeOffset="1" StartFromCurrentNode="false" ShowStartingNode="false" />							
+								<asp:Menu runat="server" ID="subMenu" SkinID="subMenu" DataSourceID="subnavSitemap" />
+							</div>
+							<asp:ContentPlaceHolder ID="leftColumn" runat="server">
+								<%-- Left sidebar content placeholder. Again the 
+								individual boxes are created by using a <div> and 
+								assigning a class to it: 'sidebarcontainer'. 
+								Follow the structure of the sample content below:
+								
+								<div class="sidebarcontainer">
+									<h4>Headline</h4>
+									<p>Content</p>
+								</div>								
+								--%>
+								<div class="sidebarcontainer" style="text-align: right">
+									<h4 style="text-align: left">
+                                        All pictures on this web site are designs created with our Ringonpc software&nbsp;</h4>
+                                    <p style="overflow: visible; position: static"><asp:Image runat="server" ID="Image1" ImageUrl="~/Images/susan/Citrine.JPG" Width="115" Height="77px" AlternateText="sailing boat"  />&nbsp;</p>
+									<p style="text-align: left">
+                                        Brilliant Cut with Platinum and Yellow Gold</p>
+                					<asp:HyperLink ID="HyperLink7" runat="server" ToolTip="More details" NavigateUrl="~/Ringonpc/Default.aspx" >&raquo; more</asp:HyperLink>
+								</div>
+								<div class="sidebarcontainer">
+									<h4>
+										Quick Links</h4>
+									<ul>
+										<li><asp:HyperLink ID="hyperlink1" runat="server" ToolTip="Ringonpc" NavigateUrl="~/Ringonpc/Default.aspx">&raquo; Ringpnpc</asp:HyperLink></li><li><asp:HyperLink ID="hyperlink2" runat="server" ToolTip="Buy" NavigateUrl="~/Buy/Default.aspx">&raquo; Buy</asp:HyperLink></li><li><asp:HyperLink ID="hyperlink3" runat="server" ToolTip="Requirements" NavigateUrl="~/Install/Requirements.aspx">&raquo; Requirements</asp:HyperLink></li><li><asp:HyperLink ID="hyperlink4" runat="server" ToolTip="Install" NavigateUrl="~/Install/HowToInstall.aspx">&raquo; Install</asp:HyperLink></li><li><asp:HyperLink ID="hyperlink5" runat="server" ToolTip="Contact" NavigateUrl="~/Contact.aspx">&raquo; Contact</asp:HyperLink></li><li><asp:HyperLink ID="hyperlink6" runat="server" ToolTip="License" NavigateUrl="~/Install/License.aspx">&raquo; License</asp:HyperLink></li></ul>
+								</div>
+								<!--
+								<div class="sidebarcontainer">
+									<asp:Login ID="Login1" runat="server" Width="120px">							
+										<LayoutTemplate>
+											<h4>Log In</h4>
+											<asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName"><u>U</u>ser Name:</asp:Label><br />
+											<asp:TextBox ID="UserName" runat="server" AccessKey="u" TabIndex="60" Columns="15" />
+											<asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName"
+												ErrorMessage="User Name is required." ToolTip="User Name is required." ValidationGroup="Login1">*</asp:RequiredFieldValidator><br />
+											<asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password"><u>P</u>assword:</asp:Label><br />
+											<asp:TextBox ID="Password" runat="server" TextMode="Password" Columns="15" AccessKey="p" TabIndex="61" />
+											<asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password"
+												ErrorMessage="Password is required." ToolTip="Password is required." ValidationGroup="Login1">*</asp:RequiredFieldValidator><br />
+											<asp:CheckBox ID="RememberMe" runat="server" Text="Remember me next time." TabIndex="62" AccessKey="r" /><br />
+											<span style="color: red">
+												<asp:Literal ID="FailureText" runat="server" EnableViewState="False" />
+											</span>
+											<div align="right"><asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Log In" AccessKey="l" TabIndex="63" ValidationGroup="Login1" />
+											</div>
+										</LayoutTemplate>
+									</asp:Login>									
+								</div>
+                                --> 
+							</asp:ContentPlaceHolder>
+						</div>
+					</div>
+				</div>
+				<div id="rightcolumn">
+					<div id="rightcolcontainer">
+						<asp:ContentPlaceHolder ID="rightColumn" runat="server">
+							<%-- Right sidebar content placeholder. Again the 
+								individual boxes are created by using a <div> and 
+								assigning a class to it: 'sidebarcontainer'. 
+								Follow the structure of the sample content below:
+								
+								<div class="sidebarcontainer">
+									<h4>Headline</h4>
+									<p>Content</p>
+								</div>								
+								--%>
+							<div class="sidebarcontainer">
+								<h4>
+                                    Birthstones</h4>
+                                <p>
+                                    Each month of the year has a specific birthstone ilustrated in the software. You
+                                    can choose, mix with various metals, rotate, change transparency and background
+                                    color, design your own variations.</p>
+						        <div class="readmore">
+                                    <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Ringonpc/Default.aspx"
+                                        ToolTip="More details">&raquo; more</asp:HyperLink><a href="Ringonpc/Default.aspx" title="More info"></a>&nbsp;</div>
+							</div>
+							<div class="sidebarcontainer">
+								<h4>
+                                    Blue Topaz</h4>
+								<p>
+									<asp:Image runat="server" ID="TopazPearImage" ImageUrl="~/Images/Topaz_PearShape_Gold_Platinum_solitare.JPG" Width="115" Height="178" AlternateText="sailing boat"  /></p>
+								<p>
+                                    Gold, Platinum around the PearShape BlueTopaz perfect for December birthstone</p>
+						        <div class="readmore">
+                                    <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Ringonpc/Default.aspx"
+                                        ToolTip="More details">&raquo; more</asp:HyperLink><a href="Ringonpc/Default.aspx" title="More info"></a>&nbsp;</div>
+							</div>
+						</asp:ContentPlaceHolder>
+					</div>
+				</div>
+				<div id="footer" style="text-align: center">
+                    <span>
+                        <br />
+                        Copyright &copy; 2009 ABACASOFT LIMITED All rights reserved.</span>
+                    <center>
+                        <span><span>Contact us: <a href="mailto: contact@jewelleryonpc.com" style="color: blue;
+                            text-decoration: underline">contact@jewelleryonpc.com</a></span></span></center>
+                    <center>
+                        <span><span></span>
+                                <span style="color: #0000ff"><a href="mailto:contact@jewelleryonpc.com">
+                        </a></span></span>&nbsp;</center>
+                    <center>
+                        <span><span></span></span>&nbsp;</center>
+ 
+
+				</div>
+			</div>
+		</div>
+	</form>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8980910-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+</body>
+</html>

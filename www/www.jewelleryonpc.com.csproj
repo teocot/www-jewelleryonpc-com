@@ -1,0 +1,291 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5FF13260-B11C-4D82-9CF7-AC36156B0CB8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>jewelleryonpc</RootNamespace>
+    <AssemblyName>jewelleryonpc</AssemblyName>
+    <SignManifests>false</SignManifests>
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <None Include="App_Data\images\rb_image.1.0.bin" />
+    <None Include="App_Data\images\RingonpcbirthstoneDemoSetup.msi" />
+    <None Include="Web.config.bak" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppMaster.Master.cs">
+      <DependentUpon>AppMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppMaster.Master.designer.cs">
+      <DependentUpon>AppMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\data\Cuts.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App_Code\data\Database.cs" />
+    <Compile Include="App_Code\data\DataException.cs" />
+    <Compile Include="App_Code\data\Gemstones.cs" />
+    <Compile Include="App_Code\data\Log.cs" />
+    <Compile Include="App_Code\data\Meshes.cs" />
+    <Compile Include="App_Code\license\License.cs" />
+    <Compile Include="App_Code\model\ContactUs.cs" />
+    <Compile Include="App_Code\model\Customer.cs" />
+    <Compile Include="App_Code\model\DownloadDemo.cs" />
+    <Compile Include="App_Code\model\DownloadInstaller.cs" />
+    <Compile Include="App_Code\model\EmailDownload.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App_Code\model\Encryption.cs" />
+    <Compile Include="App_Code\model\IPN.cs" />
+    <Compile Include="App_Code\model\IPNProcess.cs" />
+    <Compile Include="Buy\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buy\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ActivateProgram.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ActivateProgram.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ActivateProgram.aspx.designer.cs">
+      <DependentUpon>ActivateProgram.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\BinaryData.aspx.designer.cs">
+      <DependentUpon>BinaryData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\DownloadInstallerMsi.aspx.designer.cs">
+      <DependentUpon>DownloadInstallerMsi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ProcessIPN.aspx.designer.cs">
+      <DependentUpon>ProcessIPN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ShowRequest.aspx.designer.cs">
+      <DependentUpon>ShowRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\BinaryData.aspx.cs">
+      <DependentUpon>BinaryData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\DownloadInstallerMsi.aspx.cs">
+      <DependentUpon>DownloadInstallerMsi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\ProcessIPN.aspx.cs">
+      <DependentUpon>ProcessIPN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\ShowRequest.aspx.cs">
+      <DependentUpon>ShowRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Download\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Download\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Download\DemoLicense.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DemoLicense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Download\DemoLicense.aspx.designer.cs">
+      <DependentUpon>DemoLicense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Download\RequiredData.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>RequiredData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Download\RequiredData.aspx.designer.cs">
+      <DependentUpon>RequiredData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Granite\Default.css" />
+    <Content Include="App_Themes\Granite\Images\bg_tile.gif" />
+    <Content Include="App_Themes\Granite\Images\header_bg.png" />
+    <Content Include="App_Themes\Granite\Images\logo.gif" />
+    <Content Include="App_Themes\Granite\Images\logo_small.gif" />
+    <Content Include="App_Themes\Granite\Images\main_bg.png" />
+    <Content Include="App_Themes\Granite\Images\stock_report.gif" />
+    <Content Include="App_Themes\Paper\Default.css" />
+    <Content Include="App_Themes\Paper\Images\logo.gif" />
+    <Content Include="App_Themes\Paper\Images\logo_small.gif" />
+    <Content Include="App_Themes\Paper\Images\main_bg.png" />
+    <Content Include="App_Themes\Paper\Images\stock_report.gif" />
+    <Content Include="App_Themes\Sand\Default.css" />
+    <Content Include="App_Themes\Sand\Images\bg_tile.gif" />
+    <Content Include="App_Themes\Sand\Images\footer_bg.gif" />
+    <Content Include="App_Themes\Sand\Images\header_bg.png" />
+    <Content Include="App_Themes\Sand\Images\logo.gif" />
+    <Content Include="App_Themes\Sand\Images\logo_small.gif" />
+    <Content Include="App_Themes\Sand\Images\mainnav_bg.gif" />
+    <Content Include="App_Themes\Sand\Images\mainnav_bg_ie.gif" />
+    <Content Include="App_Themes\Sand\Images\mainnav_hover_bg.gif" />
+    <Content Include="App_Themes\Sand\Images\mainnav_select_bg.gif" />
+    <Content Include="App_Themes\Sand\Images\main_bg.gif" />
+    <Content Include="App_Themes\Sand\Images\stock_report.gif" />
+    <Content Include="Buy\BuyButtons.html" />
+    <Content Include="Images\catherine\AmethystTabletcutGold.JPG" />
+    <Content Include="Images\catherine\BrilliantAlexandriteCircleOpenClawPlatinum.JPG" />
+    <Content Include="Images\catherine\cushiongarnetsilver.JPG" />
+    <Content Include="Images\catherine\RingDesignStep1.JPG" />
+    <Content Include="Images\catherine\RingDesignStep2.JPG" />
+    <Content Include="Images\catherine\RingDesignStep3.JPG" />
+    <Content Include="Images\catherine\RingDesignStep4.JPG" />
+    <Content Include="Images\DesignSteps\RingDesignStep1.JPG" />
+    <Content Include="Images\DesignSteps\RingDesignStep2.JPG" />
+    <Content Include="Images\DesignSteps\RingDesignStep3.JPG" />
+    <Content Include="Images\DesignSteps\RingDesignStep4.JPG" />
+    <Content Include="Images\DiamondCushion.JPG" />
+    <Content Include="Images\Diamond_bkg_gray.JPG" />
+    <Content Include="Images\Emerald_PearShape_bkg_gray.JPG" />
+    <Content Include="Images\MarquiseCitrine.JPG" />
+    <Content Include="Images\PrincessMarch.GIF" />
+    <Content Include="Images\PrincessMarch.JPG" />
+    <Content Include="Images\ProgramView.JPG" />
+    <Content Include="Images\susan\AquamarineOval.JPG" />
+    <Content Include="Images\susan\AquamarineOval2.JPG" />
+    <Content Include="Images\susan\AquamarineOval3.JPG" />
+    <Content Include="Images\susan\AquamarineOval4.JPG" />
+    <Content Include="Images\susan\Citrine.JPG" />
+    <Content Include="Images\susan\Collage1.JPG" />
+    <Content Include="Images\susan\DiamondGold.JPG" />
+    <Content Include="Images\susan\EmeraldCutTourmaline.JPG" />
+    <Content Include="Images\susan\EmeraldPearShape.JPG" />
+    <Content Include="Images\TableCutAqumarine.JPG" />
+    <Content Include="Images\Topaz_PearShape_Gold_Platinum_solitare.JPG" />
+    <Content Include="Install\Default.aspx" />
+    <Content Include="Install\HowToInstall.aspx" />
+    <Content Include="Install\License.aspx" />
+    <Content Include="Install\Requirements.aspx" />
+    <Content Include="Ringonpc\Default.aspx" />
+    <Content Include="Ringonpc\Design\DesignSteps.aspx" />
+    <Content Include="Ringonpc\Design\Sample1.aspx" />
+    <Content Include="Ringonpc\Design\Sample2.aspx" />
+    <Content Include="Ringonpc\Design\Sample3.aspx" />
+    <Content Include="Ringonpc\Ringonpc.aspx" />
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\log.txt" />
+    <Content Include="App_Data\mail_message\Body.txt" />
+    <Content Include="App_Data\mail_message\Foot.txt" />
+    <Content Include="App_Data\mail_message\Head.txt" />
+    <Content Include="App_Themes\Granite\Skins.skin" />
+    <Content Include="App_Themes\Paper\Skins.skin" />
+    <Content Include="App_Themes\Sand\Skins.skin" />
+    <Content Include="AppMaster.Master" />
+    <Content Include="Buy\Default.aspx" />
+    <Content Include="Client\ActivateProgram.aspx" />
+    <Content Include="Client\ActivateProgram.html" />
+    <Content Include="Client\ActivateProgramDev.html" />
+    <Content Include="Client\ActivateProgramProd.html" />
+    <Content Include="Client\ProcessIPN.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Download\Default.aspx" />
+    <Content Include="Download\DemoLicense.aspx" />
+    <Content Include="Download\Download.with.email.html" />
+    <Content Include="Download\RequiredData.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Client\Message.Config" />
+    <Content Include="Client\BinaryData.aspx" />
+    <Content Include="Client\BuyButtons.html" />
+    <Content Include="Client\DownloadInstallerMsi.aspx" />
+    <Content Include="Client\DownloadInstallerMsi.html" />
+    <Content Include="Client\index.html" />
+    <Content Include="Client\messages\DownloadComplete.html" />
+    <Content Include="Client\messages\DownloadExpired.html" />
+    <Content Include="Client\messages\DownloadFileNotFound.html" />
+    <Content Include="Client\messages\InvalidCustomerForDownload.html" />
+    <Content Include="Client\ProcessIPN.html" />
+    <Content Include="Client\ShowRequest.aspx" />
+    <Content Include="Client\ShowRequest.html" />
+    <Content Include="Client\TextFile.txt" />
+    <Content Include="Web.Config.dev.Config" />
+    <Content Include="Web.Config.prod.Config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="Client\images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>2000</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/jewelleryonpc</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost/jewelleryonpc</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

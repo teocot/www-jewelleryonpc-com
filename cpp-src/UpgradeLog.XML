@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="abagraph">
+</Property><Property Name="Solution File" Value="D:\dev\abagraph\src\abagraph.sln">
+</Property><Property Name="Date" Value="2009-04-13">
+</Property><Property Name="Time" Value="16:04">
+</Property></Properties><Event ErrorLevel="2" Project="C:\msdn\sample\4342\EasyFont.vcp" Source="EasyFont" Description="Unable to convert project.&#xA;Please make sure this is a valid Visual C++ 4.0 or later project.">
+</Event><Event ErrorLevel="2" Project="EasyFont" Source="C:\msdn\sample\4342\EasyFont.vcp" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="EasyFont" Source="C:\msdn\sample\4342\EasyFont.vcp" Description="Not Converted">
+</Event></UpgradeLog>

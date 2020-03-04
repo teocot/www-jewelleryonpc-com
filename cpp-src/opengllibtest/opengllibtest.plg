@@ -1,0 +1,104 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: opengllib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\PZLC2S~1.APA\LOCALS~1\Temp\RSP75.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../../src" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/opengllib.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\dev\src\opengllib\Transform.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\PZLC2S~1.APA\LOCALS~1\Temp\RSP75.tmp" 
+Creating temporary file "D:\DOCUME~1\PZLC2S~1.APA\LOCALS~1\Temp\RSP76.tmp" with contents
+[
+/nologo /out:"..\..\lib\Debug\opengllibd.lib" 
+.\Debug\Antialias.obj
+.\Debug\Blending.obj
+.\Debug\Camera.obj
+.\Debug\Cameras.obj
+.\Debug\Color.obj
+.\Debug\Light.obj
+.\Debug\LightModel.obj
+.\Debug\Lights.obj
+.\Debug\Material.obj
+.\Debug\MaterialList.obj
+.\Debug\Normal3f.obj
+.\Debug\Ortho2D.obj
+.\Debug\Ortho3D.obj
+.\Debug\Perspective.obj
+.\Debug\Perspective1Point.obj
+.\Debug\Pixel.obj
+.\Debug\PixelMap.obj
+.\Debug\Quad.obj
+.\Debug\ShadeModel.obj
+.\Debug\StdAfx.obj
+.\Debug\Texture.obj
+.\Debug\TextureImage.obj
+.\Debug\Textures.obj
+.\Debug\Transform.obj
+.\Debug\Unproject.obj
+.\Debug\Vertex3f.obj
+.\Debug\Viewport.obj
+\dev\lib\Debug\geolibd.lib
+\dev\src\memorylib\Debug\memorylib.lib
+]
+Creating command line "link.exe -lib @D:\DOCUME~1\PZLC2S~1.APA\LOCALS~1\Temp\RSP76.tmp"
+<h3>Output Window</h3>
+Compiling...
+Transform.cpp
+Creating library...
+Replacing .\Debug\StdAfx.obj
+<h3>
+--------------------Configuration: opengllibtest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\PZLC2S~1.APA\LOCALS~1\Temp\RSP77.tmp" with contents
+[
+cppunitd.lib testrunnerd.lib glu32.lib opengl32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/opengllibtest.pdb" /debug /machine:I386 /out:"Debug/opengllibtest.exe" /pdbtype:sept 
+.\Debug\ChildView.obj
+.\Debug\MainFrm.obj
+.\Debug\opengllibtest.obj
+.\Debug\StdAfx.obj
+.\Debug\TestAntialias.obj
+.\Debug\TestBlending.obj
+.\Debug\TestCamera.obj
+.\Debug\TestCameras.obj
+.\Debug\TestColor.obj
+.\Debug\TestLight.obj
+.\Debug\TestLightModel.obj
+.\Debug\TestLights.obj
+.\Debug\TestMaterial.obj
+.\Debug\TestMaterialList.obj
+.\Debug\TestNormal3f.obj
+.\Debug\TestOrtho2D.obj
+.\Debug\TestOrtho3D.obj
+.\Debug\TestPerspective.obj
+.\Debug\TestPerspective1Point.obj
+.\Debug\TestPixel.obj
+.\Debug\TestPixelMap.obj
+.\Debug\TestQuad.obj
+.\Debug\TestShadeModel.obj
+.\Debug\TestTexture.obj
+.\Debug\TestTextureImage.obj
+.\Debug\TestTextures.obj
+.\Debug\TestTransform.obj
+.\Debug\TestUnproject.obj
+.\Debug\TestVertex3f.obj
+.\Debug\TestViewport.obj
+.\Debug\opengllibtest.res
+\dev\lib\Debug\opengllibd.lib
+]
+Creating command line "link.exe @D:\DOCUME~1\PZLC2S~1.APA\LOCALS~1\Temp\RSP77.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+opengllibtest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

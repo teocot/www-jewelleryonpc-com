@@ -1,0 +1,27 @@
+<%@ Page Language="C#" MasterPageFile="~/AppMaster.master" AutoEventWireup="true" 
+    CodeBehind="Default.aspx.cs" Inherits="Buy_Default"  Title="Buy" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="mainCopy">
+<form></form>
+    <div class="container">
+        <h2>
+            3D Ringonpc Jewellery designer</h2>
+        <h2>
+            Buy with PayPal from the Sandbox</h2>
+        <p>
+            &nbsp;</p>
+        
+        <h2>
+            Buy with PayPal from the Sandbox</h2>
+<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="POST">
+    <input type="hidden" name="redirectflag" id = "redirectflag" value="true" />
+
+    <input type="hidden" name="cmd" value="_s-xclick"/>
+    <input type="hidden" name="hosted_button_id" value="27743"/>
+    <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" 
+            border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
+                &nbsp;<br />
+                &nbsp;
+</form>
+    </div>
+</asp:Content>

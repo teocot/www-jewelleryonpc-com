@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="~/Default.aspx" title="Home"  description="Home page">
+    
+    <siteMapNode url="~/Ringonpc/Default.aspx" title="Ringonpc"  description="Ringonpc">
+      <siteMapNode url="~/Ringonpc/Ringonpc.aspx" title="Ringonpc"  description="Ringonpc description" />
+      <siteMapNode url="~/Ringonpc/Design/DesignSteps.aspx" title="Design Ring"  description="Ringonpc Design steps" >
+        <siteMapNode url="~/Ringonpc/Design/Sample1.aspx" title="Sample1"  description="Ringonpc Design Sample 1" />
+        <siteMapNode url="~/Ringonpc/Design/Sample2.aspx" title="Sample2"  description="Ringonpc Design Sample 2" />
+        <siteMapNode url="~/Ringonpc/Design/Sample3.aspx" title="Sample3"  description="Ringonpc Design Sample 3" />
+  		</siteMapNode>
+    </siteMapNode>
+
+
+    <siteMapNode url="~/Buy/Default.aspx" title="Buy"  description="Buy options">
+    </siteMapNode>
+
+
+    <siteMapNode url="~/Download/Default.aspx" title="Download demo"  description="Download demo">
+      <siteMapNode url="~/Download/DemoLicense.aspx" title="License"  description="License" />
+      <siteMapNode url="~/Download/RequiredData.aspx" title="RequiredData" description="RequiredData"/>
+    </siteMapNode>
+  
+    <siteMapNode url="~/Install/Default.aspx" title="Install"  description="Install">
+      <siteMapNode url="~/Install/HowToInstall.aspx" title="How to install"  description="How to install" />
+      <siteMapNode url="~/Install/Requirements.aspx" title="Requirements"  description="Software Requirements" />
+      <siteMapNode url="~/Install/License.aspx" title="License"  description="End User License Agreement" />
+
+    </siteMapNode>
+
+    <siteMapNode url="~/Contact.aspx" title="Contact" description="Contact Us" />
+  </siteMapNode>  
+</siteMap>

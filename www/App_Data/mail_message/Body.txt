@@ -1,0 +1,24 @@
+The above link is available for a period of 24 hours. 
+
+In order to install the program, double click on the downloaded file.
+Once the program is installed you can run it from the Programs folder 
+or from the icon installed on your desktop.
+
+When you run the program for the first time, you will be asked to enter 
+the registration details as presented above (name, product number and key).
+You can copy the data from this email, without the " (quotes) and paste it
+in the license form. For example if the product id is "123456789" you
+have to enter only 123456789 without the quotation marks.
+
+Once you entered the details of the registration, the software will connect 
+to www.jewelleryonpc.com web site in order to activate the product.
+Please note that the Program requires an internet connection running
+in order to be able to activate the program and run it for the first time.
+After the activation is completed the program can be used without an internet 
+connection.
+
+If you have any questions please email us at:
+contact@jewelleryonpc.com
+
+Regards,
+The team at Abacasoft.

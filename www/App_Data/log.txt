@@ -1,0 +1,883 @@
+
+----------------start run -------------------------
+[03:05:2009 23:58:42:390] DownloadInstallerMSI page load start
+[03:05:2009 23:58:42:390] Request: [112456,37,1240918804,]
+[03:05:2009 23:58:42:390] DownloadInstaller created
+[03:05:2009 23:58:42:406] strPage != 0 = 
+[03:05:2009 23:58:42:406] isValidDateIntervalForDownload start
+[03:05:2009 23:58:42:406] strSqlStatement =  SELECT DATEDIFF(hour, (SELECT emaildate  FROM License  WHERE id = '37 '), CURRENT_TIMESTAMP) FROM License;
+[03:05:2009 23:58:43:734] 120 =  SELECT DATEDIFF(hour, (SELECT emaildate  FROM License  WHERE id = '37 '), CURRENT_TIMESTAMP) FROM License;
+[03:05:2009 23:58:43:781] strDifference = 120
+[03:05:2009 23:58:43:781] diff = 120, return false
+[03:05:2009 23:58:43:781] displayDownloadExpired
+[03:05:2009 23:58:43:781] displayDownloadExpired
+
+----------------start run -------------------------
+[04:05:2009 18:47:43:421] PageLoad
+[04:05:2009 18:47:43:437] strPayPalUrl = https://www.sandbox.paypal.com/cgi-bin/webscr
+[04:05:2009 18:47:43:453] IS development
+[04:05:2009 18:47:44:046] Dev strRequest = test_ipn=1&payment_type=instant&payment_date=18%3A36%3A53+Jan.+26%2C+2009+PST&payment_status=Completed&payer_status=verified&first_name=John&last_name=Smith&payer_email=teodor%40xtra.co.nz&payer_id=TESTBUYERID01&business=teodor%40xtra.co.nz&receiver_email=teodor%40xtra.co.nz&receiver_id=TESTSELLERID1&residence_country=US&item_name=ItemName&item_number=AK-1234&quantity=1&tax=2.02&mc_currency=USD&mc_fee=0.44&mc_gross=15.34&mc_gross1=12.34&mc_handling=2.06&mc_handling1=1.67&mc_shipping=3.02&mc_shipping1=1.02&txn_type=cart&txn_id=53127236&notify_version=2.4&custom=xyz123&invoice=abc1234&charset=windows-1252&verify_sign=AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc&cmd=_notify-validate
+[04:05:2009 18:47:48:015] strResponse = INVALID
+[04:05:2009 18:47:48:015] [test_ipn = 1]
+[04:05:2009 18:47:48:015] [payment_type = instant]
+[04:05:2009 18:47:48:015] [payment_date = 18%3A36%3A53+Jan.+26%2C+2009+PST]
+[04:05:2009 18:47:48:015] [payment_status = Completed]
+[04:05:2009 18:47:48:015] [payer_status = verified]
+[04:05:2009 18:47:48:031] [first_name = Helen]
+[04:05:2009 18:47:48:031] [last_name = Williams]
+[04:05:2009 18:47:48:031] [payer_email = helenw.williams@xtra.co.nz]
+[04:05:2009 18:47:48:031] [payer_id = TESTBUYERID01]
+[04:05:2009 18:47:48:031] [business = business name]
+[04:05:2009 18:47:48:031] [receiver_email = helenw.williams@xtra.co.nz]
+[04:05:2009 18:47:48:046] [receiver_id = TESTSELLERID1]
+[04:05:2009 18:47:48:046] [residence_country = US]
+[04:05:2009 18:47:48:046] [item_name = ringonpc]
+[04:05:2009 18:47:48:046] [item_number = 1.2]
+[04:05:2009 18:47:48:046] [quantity = 1]
+[04:05:2009 18:47:48:046] [tax = 2.02]
+[04:05:2009 18:47:48:046] [mc_currency = USD]
+[04:05:2009 18:47:48:046] [mc_fee = 0.44]
+[04:05:2009 18:47:48:046] [mc_gross = 110.00]
+[04:05:2009 18:47:48:046] [mc_gross1 = 12.34]
+[04:05:2009 18:47:48:046] [mc_handling = 2.06]
+[04:05:2009 18:47:48:046] [mc_handling1 = 1.67]
+[04:05:2009 18:47:48:062] [mc_shipping = 3.02]
+[04:05:2009 18:47:48:062] [mc_shipping1 = 1.02]
+[04:05:2009 18:47:48:062] [txn_type = cart]
+[04:05:2009 18:47:48:062] [txn_id = 53127236]
+[04:05:2009 18:47:48:062] [notify_version = 2.4]
+[04:05:2009 18:47:48:062] [custom = xyz123]
+[04:05:2009 18:47:48:062] [invoice = abc1234]
+[04:05:2009 18:47:48:062] [charset = windows-1252]
+[04:05:2009 18:47:48:062] [verify_sign = AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc]
+[04:05:2009 18:47:48:062] [cmd = _notify-validate]
+[04:05:2009 18:47:48:078] INVALID
+[04:05:2009 18:48:28:906] PageLoad
+[04:05:2009 18:48:28:906] strPayPalUrl = https://www.sandbox.paypal.com/cgi-bin/webscr
+[04:05:2009 18:48:28:906] IS development
+[04:05:2009 18:48:28:937] Dev strRequest = test_ipn=1&payment_type=instant&payment_date=18%3A36%3A53+Jan.+26%2C+2009+PST&payment_status=Completed&payer_status=verified&first_name=John&last_name=Smith&payer_email=teodor%40xtra.co.nz&payer_id=TESTBUYERID01&business=teodor%40xtra.co.nz&receiver_email=teodor%40xtra.co.nz&receiver_id=TESTSELLERID1&residence_country=US&item_name=ItemName&item_number=AK-1234&quantity=1&tax=2.02&mc_currency=USD&mc_fee=0.44&mc_gross=15.34&mc_gross1=12.34&mc_handling=2.06&mc_handling1=1.67&mc_shipping=3.02&mc_shipping1=1.02&txn_type=cart&txn_id=53127236&notify_version=2.4&custom=xyz123&invoice=abc1234&charset=windows-1252&verify_sign=AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc&cmd=_notify-validate
+[04:05:2009 18:48:29:937] strResponse = INVALID
+[04:05:2009 18:48:29:937] [test_ipn = 1]
+[04:05:2009 18:48:29:937] [payment_type = instant]
+[04:05:2009 18:48:29:937] [payment_date = 18%3A36%3A53+Jan.+26%2C+2009+PST]
+[04:05:2009 18:48:29:937] [payment_status = Completed]
+[04:05:2009 18:48:29:937] [payer_status = verified]
+[04:05:2009 18:48:29:937] [first_name = Helen]
+[04:05:2009 18:48:29:937] [last_name = Williams]
+[04:05:2009 18:48:29:953] [payer_email = helenw.williams@xtra.co.nz]
+[04:05:2009 18:48:29:953] [payer_id = TESTBUYERID01]
+[04:05:2009 18:48:29:953] [business = business name]
+[04:05:2009 18:48:29:953] [receiver_email = helenw.williams@xtra.co.nz]
+[04:05:2009 18:48:29:953] [receiver_id = TESTSELLERID1]
+[04:05:2009 18:48:29:953] [residence_country = US]
+[04:05:2009 18:48:29:953] [item_name = ringonpc]
+[04:05:2009 18:48:29:953] [item_number = 1.2]
+[04:05:2009 18:48:29:953] [quantity = 1]
+[04:05:2009 18:48:29:953] [tax = 2.02]
+[04:05:2009 18:48:29:953] [mc_currency = USD]
+[04:05:2009 18:48:29:953] [mc_fee = 0.44]
+[04:05:2009 18:48:29:953] [mc_gross = 110.00]
+[04:05:2009 18:48:29:953] [mc_gross1 = 12.34]
+[04:05:2009 18:48:29:953] [mc_handling = 2.06]
+[04:05:2009 18:48:29:953] [mc_handling1 = 1.67]
+[04:05:2009 18:48:29:953] [mc_shipping = 3.02]
+[04:05:2009 18:48:29:953] [mc_shipping1 = 1.02]
+[04:05:2009 18:48:29:968] [txn_type = cart]
+[04:05:2009 18:48:29:968] [txn_id = 53127236]
+[04:05:2009 18:48:29:968] [notify_version = 2.4]
+[04:05:2009 18:48:29:968] [custom = xyz123]
+[04:05:2009 18:48:29:968] [invoice = abc1234]
+[04:05:2009 18:48:29:968] [charset = windows-1252]
+[04:05:2009 18:48:29:968] [verify_sign = AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc]
+[04:05:2009 18:48:29:968] [cmd = _notify-validate]
+[04:05:2009 18:48:29:968] INVALID
+
+----------------start run -------------------------
+[05:05:2009 23:19:21:035] PageLoad
+[05:05:2009 23:19:21:066] strPayPalUrl = https://www.sandbox.paypal.com/cgi-bin/webscr
+[05:05:2009 23:19:21:066] IS development
+[05:05:2009 23:19:21:879] Dev strRequest = test_ipn=1&payment_type=instant&payment_date=18%3A36%3A53+Jan.+26%2C+2009+PST&payment_status=Completed&payer_status=verified&first_name=John&last_name=Smith&payer_email=teodor%40xtra.co.nz&payer_id=TESTBUYERID01&business=teodor%40xtra.co.nz&receiver_email=teodor%40xtra.co.nz&receiver_id=TESTSELLERID1&residence_country=US&item_name=ItemName&item_number=AK-1234&quantity=1&tax=2.02&mc_currency=USD&mc_fee=0.44&mc_gross=15.34&mc_gross1=12.34&mc_handling=2.06&mc_handling1=1.67&mc_shipping=3.02&mc_shipping1=1.02&txn_type=cart&txn_id=53127236&notify_version=2.4&custom=xyz123&invoice=abc1234&charset=windows-1252&verify_sign=AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc&cmd=_notify-validate
+[05:05:2009 23:19:24:894] strResponse = INVALID
+[05:05:2009 23:19:24:894] [test_ipn = 1]
+[05:05:2009 23:19:24:894] [payment_type = instant]
+[05:05:2009 23:19:24:894] [payment_date = 18%3A36%3A53+Jan.+26%2C+2009+PST]
+[05:05:2009 23:19:24:894] [payment_status = Completed]
+[05:05:2009 23:19:24:894] [payer_status = verified]
+[05:05:2009 23:19:24:894] [first_name = Helen]
+[05:05:2009 23:19:24:894] [last_name = Williams]
+[05:05:2009 23:19:24:894] [payer_email = helenw.williams@xtra.co.nz]
+[05:05:2009 23:19:24:894] [payer_id = TESTBUYERID01]
+[05:05:2009 23:19:24:894] [business = business name]
+[05:05:2009 23:19:24:894] [receiver_email = helenw.williams@xtra.co.nz]
+[05:05:2009 23:19:24:910] [receiver_id = TESTSELLERID1]
+[05:05:2009 23:19:24:910] [residence_country = US]
+[05:05:2009 23:19:24:910] [item_name = ringonpc]
+[05:05:2009 23:19:24:910] [item_number = 1.2]
+[05:05:2009 23:19:24:910] [quantity = 1]
+[05:05:2009 23:19:24:910] [tax = 2.02]
+[05:05:2009 23:19:24:910] [mc_currency = USD]
+[05:05:2009 23:19:24:910] [mc_fee = 0.44]
+[05:05:2009 23:19:24:910] [mc_gross = 110.00]
+[05:05:2009 23:19:24:910] [mc_gross1 = 12.34]
+[05:05:2009 23:19:24:910] [mc_handling = 2.06]
+[05:05:2009 23:19:24:925] [mc_handling1 = 1.67]
+[05:05:2009 23:19:24:925] [mc_shipping = 3.02]
+[05:05:2009 23:19:24:925] [mc_shipping1 = 1.02]
+[05:05:2009 23:19:24:925] [txn_type = cart]
+[05:05:2009 23:19:24:925] [txn_id = 53127236]
+[05:05:2009 23:19:24:925] [notify_version = 2.4]
+[05:05:2009 23:19:24:925] [custom = xyz123]
+[05:05:2009 23:19:24:925] [invoice = abc1234]
+[05:05:2009 23:19:24:925] [charset = windows-1252]
+[05:05:2009 23:19:24:925] [verify_sign = AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc]
+[05:05:2009 23:19:24:925] [cmd = _notify-validate]
+[05:05:2009 23:19:24:925] INVALID
+
+----------------start run -------------------------
+[05:05:2009 23:25:37:472] PageLoad
+[05:05:2009 23:25:37:504] strPayPalUrl = https://www.sandbox.paypal.com/cgi-bin/webscr
+[05:05:2009 23:25:37:504] IS development
+[05:05:2009 23:25:37:879] Dev strRequest = test_ipn=1&payment_type=instant&payment_date=18%3A36%3A53+Jan.+26%2C+2009+PST&payment_status=Completed&payer_status=verified&first_name=John&last_name=Smith&payer_email=teodor%40xtra.co.nz&payer_id=TESTBUYERID01&business=teodor%40xtra.co.nz&receiver_email=teodor%40xtra.co.nz&receiver_id=TESTSELLERID1&residence_country=US&item_name=ItemName&item_number=AK-1234&quantity=1&tax=2.02&mc_currency=USD&mc_fee=0.44&mc_gross=15.34&mc_gross1=12.34&mc_handling=2.06&mc_handling1=1.67&mc_shipping=3.02&mc_shipping1=1.02&txn_type=cart&txn_id=53127236&notify_version=2.4&custom=xyz123&invoice=abc1234&charset=windows-1252&verify_sign=AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc&cmd=_notify-validate
+[05:05:2009 23:25:45:910] strResponse = VERIFIED
+[05:05:2009 23:25:45:910] INVALID, THIS IS PROD PAYMENT, YOU HAVE TO CHECK PROD
+[05:05:2009 23:28:18:175] PageLoad
+[05:05:2009 23:28:18:175] strPayPalUrl = https://www.sandbox.paypal.com/cgi-bin/webscr
+[05:05:2009 23:28:18:175] IS development
+[05:05:2009 23:28:18:175] Dev strRequest = test_ipn=1&payment_type=instant&payment_date=18%3A36%3A53+Jan.+26%2C+2009+PST&payment_status=Completed&payer_status=verified&first_name=John&last_name=Smith&payer_email=teodor%40xtra.co.nz&payer_id=TESTBUYERID01&business=teodor%40xtra.co.nz&receiver_email=teodor%40xtra.co.nz&receiver_id=TESTSELLERID1&residence_country=US&item_name=ItemName&item_number=AK-1234&quantity=1&tax=2.02&mc_currency=USD&mc_fee=0.44&mc_gross=15.34&mc_gross1=12.34&mc_handling=2.06&mc_handling1=1.67&mc_shipping=3.02&mc_shipping1=1.02&txn_type=cart&txn_id=53127236&notify_version=2.4&custom=xyz123&invoice=abc1234&charset=windows-1252&verify_sign=AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc&cmd=_notify-validate
+[05:05:2009 23:28:20:347] strResponse = VERIFIED
+[05:05:2009 23:28:20:347] INVALID, THIS IS PROD PAYMENT, YOU HAVE TO CHECK PROD
+
+----------------start run -------------------------
+[05:05:2009 23:28:45:550] PageLoad
+[05:05:2009 23:28:45:582] strPayPalUrl = https://www.sandbox.paypal.com/cgi-bin/webscr
+[05:05:2009 23:28:45:582] IS development
+[05:05:2009 23:28:54:207] Dev strRequest = test_ipn=1&payment_type=instant&payment_date=18%3A36%3A53+Jan.+26%2C+2009+PST&payment_status=Completed&payer_status=verified&first_name=John&last_name=Smith&payer_email=teodor%40xtra.co.nz&payer_id=TESTBUYERID01&business=teodor%40xtra.co.nz&receiver_email=teodor%40xtra.co.nz&receiver_id=TESTSELLERID1&residence_country=US&item_name=ItemName&item_number=AK-1234&quantity=1&tax=2.02&mc_currency=USD&mc_fee=0.44&mc_gross=15.34&mc_gross1=12.34&mc_handling=2.06&mc_handling1=1.67&mc_shipping=3.02&mc_shipping1=1.02&txn_type=cart&txn_id=53127236&notify_version=2.4&custom=xyz123&invoice=abc1234&charset=windows-1252&verify_sign=AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc&cmd=_notify-validate
+[05:05:2009 23:29:21:910] strResponse = VERIFIED
+[05:05:2009 23:29:49:097] INVALID, THIS IS PROD PAYMENT, YOU HAVE TO CHECK PROD
+[05:05:2009 23:30:04:816] PageLoad
+[05:05:2009 23:30:04:832] strPayPalUrl = https://www.sandbox.paypal.com/cgi-bin/webscr
+[05:05:2009 23:30:04:832] IS development
+[05:05:2009 23:30:11:988] Dev strRequest = test_ipn=1&payment_type=instant&payment_date=18%3A36%3A53+Jan.+26%2C+2009+PST&payment_status=Completed&payer_status=verified&first_name=John&last_name=Smith&payer_email=teodor%40xtra.co.nz&payer_id=TESTBUYERID01&business=teodor%40xtra.co.nz&receiver_email=teodor%40xtra.co.nz&receiver_id=TESTSELLERID1&residence_country=US&item_name=ItemName&item_number=AK-1234&quantity=1&tax=2.02&mc_currency=USD&mc_fee=0.44&mc_gross=15.34&mc_gross1=12.34&mc_handling=2.06&mc_handling1=1.67&mc_shipping=3.02&mc_shipping1=1.02&txn_type=cart&txn_id=53127236&notify_version=2.4&custom=xyz123&invoice=abc1234&charset=windows-1252&verify_sign=AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc&cmd=_notify-validate
+[05:05:2009 23:30:24:363] strResponse = VERIFIED
+[05:05:2009 23:30:30:316] [test_ipn = 1]
+[05:05:2009 23:30:30:332] [payment_type = instant]
+[05:05:2009 23:30:30:332] [payment_date = 18%3A36%3A53+Jan.+26%2C+2009+PST]
+[05:05:2009 23:30:30:332] [payment_status = Completed]
+[05:05:2009 23:30:30:332] [payer_status = verified]
+[05:05:2009 23:30:30:332] [first_name = Helen]
+[05:05:2009 23:30:30:332] [last_name = Williams]
+[05:05:2009 23:30:30:332] [payer_email = helenw.williams@xtra.co.nz]
+[05:05:2009 23:30:30:332] [payer_id = TESTBUYERID01]
+[05:05:2009 23:30:30:332] [business = business name]
+[05:05:2009 23:30:30:332] [receiver_email = helenw.williams@xtra.co.nz]
+[05:05:2009 23:30:30:363] [receiver_id = TESTSELLERID1]
+[05:05:2009 23:30:30:379] [residence_country = US]
+[05:05:2009 23:30:30:379] [item_name = ringonpc]
+[05:05:2009 23:30:30:379] [item_number = 1.2]
+[05:05:2009 23:30:30:379] [quantity = 1]
+[05:05:2009 23:30:30:379] [tax = 2.02]
+[05:05:2009 23:30:30:379] [mc_currency = USD]
+[05:05:2009 23:30:30:379] [mc_fee = 0.44]
+[05:05:2009 23:30:30:379] [mc_gross = 110.00]
+[05:05:2009 23:30:30:379] [mc_gross1 = 12.34]
+[05:05:2009 23:30:30:379] [mc_handling = 2.06]
+[05:05:2009 23:30:30:379] [mc_handling1 = 1.67]
+[05:05:2009 23:30:30:379] [mc_shipping = 3.02]
+[05:05:2009 23:30:30:379] [mc_shipping1 = 1.02]
+[05:05:2009 23:30:30:394] [txn_type = cart]
+[05:05:2009 23:30:30:394] [txn_id = 53127236]
+[05:05:2009 23:30:30:394] [notify_version = 2.4]
+[05:05:2009 23:30:30:394] [custom = xyz123]
+[05:05:2009 23:30:30:394] [invoice = abc1234]
+[05:05:2009 23:30:30:394] [charset = windows-1252]
+[05:05:2009 23:30:30:394] [verify_sign = AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc]
+[05:05:2009 23:30:30:394] [cmd = _notify-validate]
+[05:05:2009 23:30:37:972] VERIFIED
+[05:05:2009 23:30:41:394] processVerifiedPayment started
+[05:05:2009 23:30:43:144] wasPaymentAlreadyProcessed for txn_id = 53127236
+
+----------------start run -------------------------
+[05:05:2009 23:38:32:613] PageLoad
+[05:05:2009 23:38:32:644] strPayPalUrl = https://www.sandbox.paypal.com/cgi-bin/webscr
+[05:05:2009 23:38:32:644] IS development
+[05:05:2009 23:38:33:050] Dev strRequest = test_ipn=1&payment_type=instant&payment_date=18%3A36%3A53+Jan.+26%2C+2009+PST&payment_status=Completed&payer_status=verified&first_name=John&last_name=Smith&payer_email=teodor%40xtra.co.nz&payer_id=TESTBUYERID01&business=teodor%40xtra.co.nz&receiver_email=teodor%40xtra.co.nz&receiver_id=TESTSELLERID1&residence_country=US&item_name=ItemName&item_number=AK-1234&quantity=1&tax=2.02&mc_currency=USD&mc_fee=0.44&mc_gross=15.34&mc_gross1=12.34&mc_handling=2.06&mc_handling1=1.67&mc_shipping=3.02&mc_shipping1=1.02&txn_type=cart&txn_id=53127236&notify_version=2.4&custom=xyz123&invoice=abc1234&charset=windows-1252&verify_sign=AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc&cmd=_notify-validate
+[05:05:2009 23:38:38:722] strResponse = VERIFIED
+[05:05:2009 23:38:38:722] [test_ipn = 1]
+[05:05:2009 23:38:38:722] [payment_type = instant]
+[05:05:2009 23:38:38:738] [payment_date = 18%3A36%3A53+Jan.+26%2C+2009+PST]
+[05:05:2009 23:38:38:738] [payment_status = Completed]
+[05:05:2009 23:38:38:738] [payer_status = verified]
+[05:05:2009 23:38:38:738] [first_name = Helen]
+[05:05:2009 23:38:38:738] [last_name = Williams]
+[05:05:2009 23:38:38:738] [payer_email = helenw.williams@xtra.co.nz]
+[05:05:2009 23:38:38:738] [payer_id = TESTBUYERID01]
+[05:05:2009 23:38:38:738] [business = business name]
+[05:05:2009 23:38:38:738] [receiver_email = contact@jewelleryonpc.com]
+[05:05:2009 23:38:38:754] [receiver_id = TESTSELLERID1]
+[05:05:2009 23:38:38:754] [residence_country = US]
+[05:05:2009 23:38:38:754] [item_name = ringonpcbirthstone]
+[05:05:2009 23:38:38:754] [item_number = 1.0]
+[05:05:2009 23:38:38:754] [quantity = 1]
+[05:05:2009 23:38:38:754] [tax = 2.02]
+[05:05:2009 23:38:38:754] [mc_currency = USD]
+[05:05:2009 23:38:38:754] [mc_fee = 0.44]
+[05:05:2009 23:38:38:754] [mc_gross = 120.00]
+[05:05:2009 23:38:38:754] [mc_gross1 = 12.34]
+[05:05:2009 23:38:38:754] [mc_handling = 2.06]
+[05:05:2009 23:38:38:754] [mc_handling1 = 1.67]
+[05:05:2009 23:38:38:754] [mc_shipping = 3.02]
+[05:05:2009 23:38:38:769] [mc_shipping1 = 1.02]
+[05:05:2009 23:38:38:769] [txn_type = cart]
+[05:05:2009 23:38:38:769] [txn_id = 53127236]
+[05:05:2009 23:38:38:769] [notify_version = 2.4]
+[05:05:2009 23:38:38:769] [custom = xyz123]
+[05:05:2009 23:38:38:769] [invoice = abc1234]
+[05:05:2009 23:38:38:769] [charset = windows-1252]
+[05:05:2009 23:38:38:769] [verify_sign = AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc]
+[05:05:2009 23:38:38:769] [cmd = _notify-validate]
+[05:05:2009 23:38:38:769] VERIFIED
+[05:05:2009 23:38:38:785] processVerifiedPayment started
+[05:05:2009 23:38:38:785] wasPaymentAlreadyProcessed for txn_id = 53127236
+[05:05:2009 23:38:39:785] 53127236 = select number from customer where txn_id = '53127236';
+[05:05:2009 23:38:39:816] payment is already processed
+[05:05:2009 23:38:58:613] PageLoad
+[05:05:2009 23:38:58:613] strPayPalUrl = https://www.sandbox.paypal.com/cgi-bin/webscr
+[05:05:2009 23:38:58:613] IS development
+[05:05:2009 23:38:58:629] Dev strRequest = test_ipn=1&payment_type=instant&payment_date=18%3A36%3A53+Jan.+26%2C+2009+PST&payment_status=Completed&payer_status=verified&first_name=John&last_name=Smith&payer_email=teodor%40xtra.co.nz&payer_id=TESTBUYERID01&business=teodor%40xtra.co.nz&receiver_email=teodor%40xtra.co.nz&receiver_id=TESTSELLERID1&residence_country=US&item_name=ItemName&item_number=AK-1234&quantity=1&tax=2.02&mc_currency=USD&mc_fee=0.44&mc_gross=15.34&mc_gross1=12.34&mc_handling=2.06&mc_handling1=1.67&mc_shipping=3.02&mc_shipping1=1.02&txn_type=cart&txn_id=53127236&notify_version=2.4&custom=xyz123&invoice=abc1234&charset=windows-1252&verify_sign=AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc&cmd=_notify-validate
+[05:05:2009 23:38:59:894] strResponse = VERIFIED
+[05:05:2009 23:38:59:894] [test_ipn = 1]
+[05:05:2009 23:38:59:894] [payment_type = instant]
+[05:05:2009 23:38:59:894] [payment_date = 18%3A36%3A53+Jan.+26%2C+2009+PST]
+[05:05:2009 23:38:59:894] [payment_status = Completed]
+[05:05:2009 23:38:59:910] [payer_status = verified]
+[05:05:2009 23:38:59:910] [first_name = Helen]
+[05:05:2009 23:38:59:910] [last_name = Williams]
+[05:05:2009 23:38:59:910] [payer_email = helenw.williams@xtra.co.nz]
+[05:05:2009 23:38:59:910] [payer_id = TESTBUYERID01]
+[05:05:2009 23:38:59:910] [business = business name]
+[05:05:2009 23:38:59:910] [receiver_email = contact@jewelleryonpc.com]
+[05:05:2009 23:38:59:910] [receiver_id = TESTSELLERID1]
+[05:05:2009 23:38:59:910] [residence_country = US]
+[05:05:2009 23:38:59:910] [item_name = ringonpcbirthstone]
+[05:05:2009 23:38:59:910] [item_number = 1.0]
+[05:05:2009 23:38:59:910] [quantity = 1]
+[05:05:2009 23:38:59:910] [tax = 2.02]
+[05:05:2009 23:38:59:910] [mc_currency = USD]
+[05:05:2009 23:38:59:910] [mc_fee = 0.44]
+[05:05:2009 23:38:59:910] [mc_gross = 120.00]
+[05:05:2009 23:38:59:925] [mc_gross1 = 12.34]
+[05:05:2009 23:38:59:925] [mc_handling = 2.06]
+[05:05:2009 23:38:59:925] [mc_handling1 = 1.67]
+[05:05:2009 23:38:59:925] [mc_shipping = 3.02]
+[05:05:2009 23:38:59:925] [mc_shipping1 = 1.02]
+[05:05:2009 23:38:59:925] [txn_type = cart]
+[05:05:2009 23:38:59:925] [txn_id = 1287]
+[05:05:2009 23:38:59:925] [notify_version = 2.4]
+[05:05:2009 23:38:59:925] [custom = xyz123]
+[05:05:2009 23:38:59:925] [invoice = abc1234]
+[05:05:2009 23:38:59:925] [charset = windows-1252]
+[05:05:2009 23:38:59:941] [verify_sign = AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc]
+[05:05:2009 23:38:59:941] [cmd = _notify-validate]
+[05:05:2009 23:38:59:941] VERIFIED
+[05:05:2009 23:38:59:941] processVerifiedPayment started
+[05:05:2009 23:38:59:941] wasPaymentAlreadyProcessed for txn_id = 1287
+[05:05:2009 23:38:59:988]  = select number from customer where txn_id = '1287';
+[05:05:2009 23:38:59:988] contact@jewelleryonpc.com
+[05:05:2009 23:38:59:988] Receiver email from config is: contact@jewelleryonpc.com
+[05:05:2009 23:38:59:988] getProductAmount for: [ringonpcbirthstone,1.0]
+[05:05:2009 23:38:59:988] strSqlStatement is: SELECT price FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:39:00:004] 300.43 = SELECT price FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:39:00:004] DB Amount of payment should be: 300.43
+[05:05:2009 23:39:00:004] getProductCurrency for: [ringonpcbirthstone,1.0]
+[05:05:2009 23:39:00:004] strSqlStatement is: SELECT currency FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:39:00:019] USD = SELECT currency FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:39:00:019] Amount of payment is: 120
+[05:05:2009 23:39:00:019] payed incorrect or wrong currency
+[05:05:2009 23:39:00:019] payment amount is incorrect = 120.00
+[05:05:2009 23:39:00:019] payment currency is:  = USD
+[05:05:2009 23:39:00:019] InvalidPayment
+[05:05:2009 23:39:00:019] wriote invalid payment to database call
+[05:05:2009 23:39:00:535] Exception inserting data: String or binary data would be truncated.
+The statement has been terminated.
+[05:05:2009 23:39:00:535] wriote invalid payment to database done
+[05:05:2009 23:39:28:347] PageLoad
+[05:05:2009 23:39:28:347] strPayPalUrl = https://www.sandbox.paypal.com/cgi-bin/webscr
+[05:05:2009 23:39:28:347] IS development
+[05:05:2009 23:39:28:394] Dev strRequest = test_ipn=1&payment_type=instant&payment_date=18%3A36%3A53+Jan.+26%2C+2009+PST&payment_status=Completed&payer_status=verified&first_name=John&last_name=Smith&payer_email=teodor%40xtra.co.nz&payer_id=TESTBUYERID01&business=teodor%40xtra.co.nz&receiver_email=teodor%40xtra.co.nz&receiver_id=TESTSELLERID1&residence_country=US&item_name=ItemName&item_number=AK-1234&quantity=1&tax=2.02&mc_currency=USD&mc_fee=0.44&mc_gross=15.34&mc_gross1=12.34&mc_handling=2.06&mc_handling1=1.67&mc_shipping=3.02&mc_shipping1=1.02&txn_type=cart&txn_id=53127236&notify_version=2.4&custom=xyz123&invoice=abc1234&charset=windows-1252&verify_sign=AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc&cmd=_notify-validate
+[05:05:2009 23:39:29:410] strResponse = VERIFIED
+[05:05:2009 23:39:29:410] [test_ipn = 1]
+[05:05:2009 23:39:29:410] [payment_type = instant]
+[05:05:2009 23:39:29:410] [payment_date = 18%3A36%3A53+Jan.+26%2C+2009+PST]
+[05:05:2009 23:39:29:410] [payment_status = Completed]
+[05:05:2009 23:39:29:410] [payer_status = verified]
+[05:05:2009 23:39:29:425] [first_name = Helen]
+[05:05:2009 23:39:29:425] [last_name = Williams]
+[05:05:2009 23:39:29:425] [payer_email = helenw.williams@xtra.co.nz]
+[05:05:2009 23:39:29:425] [payer_id = TESTBUYERID01]
+[05:05:2009 23:39:29:425] [business = business name]
+[05:05:2009 23:39:29:425] [receiver_email = contact@jewelleryonpc.com]
+[05:05:2009 23:39:29:425] [receiver_id = TESTSELLERID1]
+[05:05:2009 23:39:29:425] [residence_country = US]
+[05:05:2009 23:39:29:425] [item_name = ringonpcbirthstone]
+[05:05:2009 23:39:29:425] [item_number = 1.0]
+[05:05:2009 23:39:29:425] [quantity = 1]
+[05:05:2009 23:39:29:425] [tax = 2.02]
+[05:05:2009 23:39:29:425] [mc_currency = USD]
+[05:05:2009 23:39:29:425] [mc_fee = 0.44]
+[05:05:2009 23:39:29:441] [mc_gross = 120.00]
+[05:05:2009 23:39:29:441] [mc_gross1 = 12.34]
+[05:05:2009 23:39:29:441] [mc_handling = 2.06]
+[05:05:2009 23:39:29:441] [mc_handling1 = 1.67]
+[05:05:2009 23:39:29:441] [mc_shipping = 3.02]
+[05:05:2009 23:39:29:441] [mc_shipping1 = 1.02]
+[05:05:2009 23:39:29:441] [txn_type = cart]
+[05:05:2009 23:39:29:441] [txn_id = 1287]
+[05:05:2009 23:39:29:441] [notify_version = 2.4]
+[05:05:2009 23:39:29:441] [custom = xyz123]
+[05:05:2009 23:39:29:457] [invoice = abc1234]
+[05:05:2009 23:39:29:457] [charset = windows-1252]
+[05:05:2009 23:39:29:457] [verify_sign = AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc]
+[05:05:2009 23:39:29:457] [cmd = _notify-validate]
+[05:05:2009 23:39:29:457] VERIFIED
+[05:05:2009 23:39:29:457] processVerifiedPayment started
+[05:05:2009 23:39:29:457] wasPaymentAlreadyProcessed for txn_id = 1287
+[05:05:2009 23:39:29:457]  = select number from customer where txn_id = '1287';
+[05:05:2009 23:39:29:457] contact@jewelleryonpc.com
+[05:05:2009 23:39:29:457] Receiver email from config is: contact@jewelleryonpc.com
+[05:05:2009 23:39:29:472] getProductAmount for: [ringonpcbirthstone,1.0]
+[05:05:2009 23:39:29:472] strSqlStatement is: SELECT price FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:39:29:472] 120.00 = SELECT price FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:39:29:472] DB Amount of payment should be: 120
+[05:05:2009 23:39:29:472] getProductCurrency for: [ringonpcbirthstone,1.0]
+[05:05:2009 23:39:29:472] strSqlStatement is: SELECT currency FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:39:29:472] USD = SELECT currency FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:39:29:472] Amount of payment is: 120
+[05:05:2009 23:39:29:472] payed ok in the righrt currency
+[05:05:2009 23:39:29:472] cust.writeToDataBase call
+[05:05:2009 23:39:29:519] Exception inserting data: String or binary data would be truncated.
+The statement has been terminated.
+[05:05:2009 23:39:29:519] cust.writeToDataBase done
+[05:05:2009 23:39:29:535] cust.atachLicense call
+[05:05:2009 23:39:29:597] cust.atachLicense done
+[05:05:2009 23:39:29:597] email.send call
+[05:05:2009 23:39:29:707] Create email started
+[05:05:2009 23:39:29:816] 41 = select id from License WHERE  productid = '1241523569';
+[05:05:2009 23:39:29:847] Createemail ended
+[05:05:2009 23:39:29:847] strSmtpServer = 
+[05:05:2009 23:39:29:894] this is DEV 
+[05:05:2009 23:39:29:894] client.Host = smtp.xtra.co.nz
+[05:05:2009 23:39:29:894] strCredentialsUser = helenw.williams@xtra.co.nz
+[05:05:2009 23:39:29:894] strCredentialsPassword = 
+[05:05:2009 23:39:29:972] try to send email
+[05:05:2009 23:39:30:254] email sent
+[05:05:2009 23:39:30:254] email.send done
+[05:05:2009 23:39:30:254] email.send ok
+
+----------------start run -------------------------
+[05:05:2009 23:46:00:925] PageLoad
+[05:05:2009 23:46:00:941] strPayPalUrl = https://www.sandbox.paypal.com/cgi-bin/webscr
+[05:05:2009 23:46:00:957] IS development
+[05:05:2009 23:46:01:457] Dev strRequest = test_ipn=1&payment_type=instant&payment_date=18%3A36%3A53+Jan.+26%2C+2009+PST&payment_status=Completed&payer_status=verified&first_name=John&last_name=Smith&payer_email=teodor%40xtra.co.nz&payer_id=TESTBUYERID01&business=teodor%40xtra.co.nz&receiver_email=teodor%40xtra.co.nz&receiver_id=TESTSELLERID1&residence_country=US&item_name=ItemName&item_number=AK-1234&quantity=1&tax=2.02&mc_currency=USD&mc_fee=0.44&mc_gross=15.34&mc_gross1=12.34&mc_handling=2.06&mc_handling1=1.67&mc_shipping=3.02&mc_shipping1=1.02&txn_type=cart&txn_id=53127236&notify_version=2.4&custom=xyz123&invoice=abc1234&charset=windows-1252&verify_sign=AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc&cmd=_notify-validate
+[05:05:2009 23:46:04:629] strResponse = VERIFIED
+[05:05:2009 23:46:04:629] [test_ipn = 1]
+[05:05:2009 23:46:04:644] [payment_type = instant]
+[05:05:2009 23:46:04:644] [payment_date = 18%3A36%3A53+Jan.+26%2C+2009+PST]
+[05:05:2009 23:46:04:644] [payment_status = Completed]
+[05:05:2009 23:46:04:644] [payer_status = verified]
+[05:05:2009 23:46:04:644] [first_name = Helen]
+[05:05:2009 23:46:04:644] [last_name = Williams]
+[05:05:2009 23:46:04:644] [payer_email = helenw.williams@xtra.co.nz]
+[05:05:2009 23:46:04:644] [payer_id = TESTBUYERID01]
+[05:05:2009 23:46:04:644] [business = business name]
+[05:05:2009 23:46:04:644] [receiver_email = contact@jewelleryonpc.com]
+[05:05:2009 23:46:04:644] [receiver_id = TESTSELLERID1]
+[05:05:2009 23:46:04:644] [residence_country = US]
+[05:05:2009 23:46:04:644] [item_name = ringonpcbirthstone]
+[05:05:2009 23:46:04:660] [item_number = 1.0]
+[05:05:2009 23:46:04:660] [quantity = 1]
+[05:05:2009 23:46:04:660] [tax = 2.02]
+[05:05:2009 23:46:04:660] [mc_currency = USD]
+[05:05:2009 23:46:04:660] [mc_fee = 0.44]
+[05:05:2009 23:46:04:660] [mc_gross = 120.00]
+[05:05:2009 23:46:04:660] [mc_gross1 = 12.34]
+[05:05:2009 23:46:04:660] [mc_handling = 2.06]
+[05:05:2009 23:46:04:660] [mc_handling1 = 1.67]
+[05:05:2009 23:46:04:660] [mc_shipping = 3.02]
+[05:05:2009 23:46:04:660] [mc_shipping1 = 1.02]
+[05:05:2009 23:46:04:660] [txn_type = cart]
+[05:05:2009 23:46:04:660] [txn_id = 128793]
+[05:05:2009 23:46:04:660] [notify_version = 2.4]
+[05:05:2009 23:46:04:675] [custom = xyz123]
+[05:05:2009 23:46:04:675] [invoice = abc1234]
+[05:05:2009 23:46:04:675] [charset = windows-1252]
+[05:05:2009 23:46:04:675] [verify_sign = AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc]
+[05:05:2009 23:46:04:675] [cmd = _notify-validate]
+[05:05:2009 23:46:04:675] VERIFIED
+[05:05:2009 23:46:04:691] processVerifiedPayment started
+[05:05:2009 23:46:04:691] wasPaymentAlreadyProcessed for txn_id = 128793
+[05:05:2009 23:46:06:082]  = select number from customer where txn_id = '128793';
+[05:05:2009 23:46:06:129] contact@jewelleryonpc.com
+[05:05:2009 23:46:06:129] Receiver email from config is: contact@jewelleryonpc.com
+[05:05:2009 23:46:06:129] getProductAmount for: [ringonpcbirthstone,1.0]
+[05:05:2009 23:46:06:144] strSqlStatement is: SELECT price FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:46:06:207] 120.00 = SELECT price FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:46:06:207] DB Amount of payment should be: 120
+[05:05:2009 23:46:06:207] getProductCurrency for: [ringonpcbirthstone,1.0]
+[05:05:2009 23:46:06:207] strSqlStatement is: SELECT currency FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:46:06:222] USD = SELECT currency FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:46:06:222] Amount of payment is: 120
+[05:05:2009 23:46:06:222] payed ok in the righrt currency
+[05:05:2009 23:46:06:222] cust.writeToDataBase call
+[05:05:2009 23:46:06:316] Exception inserting data: String or binary data would be truncated.
+The statement has been terminated.
+[05:05:2009 23:46:06:316] cust.writeToDataBase done
+[05:05:2009 23:46:06:332] cust.atachLicense call
+[05:05:2009 23:46:06:363] cust.atachLicense done
+[05:05:2009 23:46:06:363] email.send call
+[05:05:2009 23:46:06:379] Create email started
+[05:05:2009 23:46:06:441] 42 = select id from License WHERE  productid = '1241523966';
+[05:05:2009 23:46:06:441] Createemail ended
+[05:05:2009 23:46:06:441] strSmtpServer = 
+[05:05:2009 23:46:06:488] this is DEV 
+[05:05:2009 23:46:06:504] client.Host = smtp.xtra.co.nz
+[05:05:2009 23:46:06:504] strCredentialsUser = helenw.williams@xtra.co.nz
+[05:05:2009 23:46:06:504] strCredentialsPassword = 
+[05:05:2009 23:46:06:504] try to send email
+[05:05:2009 23:46:06:785] email sent
+[05:05:2009 23:46:06:800] email.send done
+[05:05:2009 23:46:06:800] email.send ok
+
+----------------start run -------------------------
+[05:05:2009 23:53:31:254] PageLoad
+[05:05:2009 23:53:31:285] strPayPalUrl = https://www.sandbox.paypal.com/cgi-bin/webscr
+[05:05:2009 23:53:31:285] IS development
+[05:05:2009 23:53:31:629] Dev strRequest = test_ipn=1&payment_type=instant&payment_date=18%3A36%3A53+Jan.+26%2C+2009+PST&payment_status=Completed&payer_status=verified&first_name=John&last_name=Smith&payer_email=teodor%40xtra.co.nz&payer_id=TESTBUYERID01&business=teodor%40xtra.co.nz&receiver_email=teodor%40xtra.co.nz&receiver_id=TESTSELLERID1&residence_country=US&item_name=ItemName&item_number=AK-1234&quantity=1&tax=2.02&mc_currency=USD&mc_fee=0.44&mc_gross=15.34&mc_gross1=12.34&mc_handling=2.06&mc_handling1=1.67&mc_shipping=3.02&mc_shipping1=1.02&txn_type=cart&txn_id=53127236&notify_version=2.4&custom=xyz123&invoice=abc1234&charset=windows-1252&verify_sign=AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc&cmd=_notify-validate
+[05:05:2009 23:53:34:472] strResponse = VERIFIED
+[05:05:2009 23:53:34:550] [test_ipn = 1]
+[05:05:2009 23:53:34:550] [payment_type = instant]
+[05:05:2009 23:53:34:597] [payment_date = 18%3A36%3A53+Jan.+26%2C+2009+PST]
+[05:05:2009 23:53:34:597] [payment_status = Completed]
+[05:05:2009 23:53:34:597] [payer_status = verified]
+[05:05:2009 23:53:34:597] [first_name = Helen]
+[05:05:2009 23:53:34:597] [last_name = Williams]
+[05:05:2009 23:53:34:613] [payer_email = helenw.williams@xtra.co.nz]
+[05:05:2009 23:53:34:613] [payer_id = TESTBUYERID01]
+[05:05:2009 23:53:34:613] [business = business name]
+[05:05:2009 23:53:34:613] [receiver_email = contact@jewelleryonpc.com]
+[05:05:2009 23:53:34:613] [receiver_id = TESTSELLERID1]
+[05:05:2009 23:53:34:613] [residence_country = US]
+[05:05:2009 23:53:34:613] [item_name = ringonpcbirthstone]
+[05:05:2009 23:53:34:613] [item_number = 1.0]
+[05:05:2009 23:53:34:613] [quantity = 1]
+[05:05:2009 23:53:34:613] [tax = 2.02]
+[05:05:2009 23:53:34:613] [mc_currency = USD]
+[05:05:2009 23:53:34:629] [mc_fee = 0.44]
+[05:05:2009 23:53:34:629] [mc_gross = 120.00]
+[05:05:2009 23:53:34:629] [mc_gross1 = 12.34]
+[05:05:2009 23:53:34:629] [mc_handling = 2.06]
+[05:05:2009 23:53:34:629] [mc_handling1 = 1.67]
+[05:05:2009 23:53:34:629] [mc_shipping = 3.02]
+[05:05:2009 23:53:34:629] [mc_shipping1 = 1.02]
+[05:05:2009 23:53:34:629] [txn_type = cart]
+[05:05:2009 23:53:34:629] [txn_id = 12879312]
+[05:05:2009 23:53:34:629] [notify_version = 2.4]
+[05:05:2009 23:53:34:629] [custom = xyz123]
+[05:05:2009 23:53:34:629] [invoice = abc1234]
+[05:05:2009 23:53:34:644] [charset = windows-1252]
+[05:05:2009 23:53:34:644] [verify_sign = AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc]
+[05:05:2009 23:53:34:644] [cmd = _notify-validate]
+[05:05:2009 23:53:34:644] VERIFIED
+[05:05:2009 23:53:34:644] processVerifiedPayment started
+[05:05:2009 23:53:34:644] wasPaymentAlreadyProcessed for txn_id = 12879312
+[05:05:2009 23:53:35:769]  = select number from customer where txn_id = '12879312';
+[05:05:2009 23:53:35:863] contact@jewelleryonpc.com
+[05:05:2009 23:53:35:863] Receiver email from config is: contact@jewelleryonpc.com
+[05:05:2009 23:53:35:910] getProductAmount for: [ringonpcbirthstone,1.0]
+[05:05:2009 23:53:35:910] strSqlStatement is: SELECT price FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:53:35:988] 120.00 = SELECT price FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:53:35:988] DB Amount of payment should be: 120
+[05:05:2009 23:53:35:988] getProductCurrency for: [ringonpcbirthstone,1.0]
+[05:05:2009 23:53:35:988] strSqlStatement is: SELECT currency FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:53:36:050] USD = SELECT currency FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:53:36:050] Amount of payment is: 120
+[05:05:2009 23:53:36:050] payed ok in the righrt currency
+[05:05:2009 23:53:36:050] cust.writeToDataBase call
+[05:05:2009 23:53:36:144] Exception inserting data: String or binary data would be truncated.
+The statement has been terminated.
+[05:05:2009 23:53:36:144] cust.writeToDataBase done
+[05:05:2009 23:53:36:160] cust.atachLicense call
+[05:05:2009 23:53:36:175] cust.atachLicense done
+[05:05:2009 23:53:36:175] email.send call
+[05:05:2009 23:53:36:191] Create email started
+[05:05:2009 23:53:36:300] 43 = select id from License WHERE  productid = '1241524416';
+[05:05:2009 23:53:36:300] Createemail ended
+[05:05:2009 23:53:36:316] strSmtpServer = smtp.xtra.co.nz
+[05:05:2009 23:53:36:363] this is DEV 
+[05:05:2009 23:53:36:363] client.Host = smtp.xtra.co.nz
+[05:05:2009 23:53:36:363] strCredentialsUser = helenw.williams@xtra.co.nz
+[05:05:2009 23:53:36:363] strCredentialsPassword = 
+[05:05:2009 23:53:36:379] try to send email
+[05:05:2009 23:53:36:629] email sent
+[05:05:2009 23:53:36:644] email.send done
+[05:05:2009 23:53:36:644] email.send ok
+
+----------------start run -------------------------
+[05:05:2009 23:58:50:691] PageLoad
+[05:05:2009 23:58:50:722] strPayPalUrl = https://www.sandbox.paypal.com/cgi-bin/webscr
+[05:05:2009 23:58:50:722] IS development
+[05:05:2009 23:58:51:160] Dev strRequest = test_ipn=1&payment_type=instant&payment_date=18%3A36%3A53+Jan.+26%2C+2009+PST&payment_status=Completed&payer_status=verified&first_name=John&last_name=Smith&payer_email=teodor%40xtra.co.nz&payer_id=TESTBUYERID01&business=teodor%40xtra.co.nz&receiver_email=teodor%40xtra.co.nz&receiver_id=TESTSELLERID1&residence_country=US&item_name=ItemName&item_number=AK-1234&quantity=1&tax=2.02&mc_currency=USD&mc_fee=0.44&mc_gross=15.34&mc_gross1=12.34&mc_handling=2.06&mc_handling1=1.67&mc_shipping=3.02&mc_shipping1=1.02&txn_type=cart&txn_id=53127236&notify_version=2.4&custom=xyz123&invoice=abc1234&charset=windows-1252&verify_sign=AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc&cmd=_notify-validate
+[05:05:2009 23:58:55:050] strResponse = VERIFIED
+[05:05:2009 23:58:55:066] [test_ipn = 1]
+[05:05:2009 23:58:55:066] [payment_type = instant]
+[05:05:2009 23:58:55:066] [payment_date = 18%3A36%3A53+Jan.+26%2C+2009+PST]
+[05:05:2009 23:58:55:066] [payment_status = Completed]
+[05:05:2009 23:58:55:066] [payer_status = verified]
+[05:05:2009 23:58:55:066] [first_name = Helen]
+[05:05:2009 23:58:55:066] [last_name = Williams]
+[05:05:2009 23:58:55:066] [payer_email = helenw.williams@xtra.co.nz]
+[05:05:2009 23:58:55:066] [payer_id = TESTBUYERID01]
+[05:05:2009 23:58:55:066] [business = business name]
+[05:05:2009 23:58:55:066] [receiver_email = contact@jewelleryonpc.com]
+[05:05:2009 23:58:55:066] [receiver_id = TESTSELLERID1]
+[05:05:2009 23:58:55:082] [residence_country = US]
+[05:05:2009 23:58:55:082] [item_name = ringonpcbirthstone]
+[05:05:2009 23:58:55:082] [item_number = 1.0]
+[05:05:2009 23:58:55:082] [quantity = 1]
+[05:05:2009 23:58:55:082] [tax = 2.02]
+[05:05:2009 23:58:55:082] [mc_currency = USD]
+[05:05:2009 23:58:55:082] [mc_fee = 0.44]
+[05:05:2009 23:58:55:082] [mc_gross = 120.00]
+[05:05:2009 23:58:55:082] [mc_gross1 = 12.34]
+[05:05:2009 23:58:55:082] [mc_handling = 2.06]
+[05:05:2009 23:58:55:082] [mc_handling1 = 1.67]
+[05:05:2009 23:58:55:082] [mc_shipping = 3.02]
+[05:05:2009 23:58:55:082] [mc_shipping1 = 1.02]
+[05:05:2009 23:58:55:082] [txn_type = cart]
+[05:05:2009 23:58:55:082] [txn_id = 12]
+[05:05:2009 23:58:55:082] [notify_version = 2.4]
+[05:05:2009 23:58:55:097] [custom = xyz123]
+[05:05:2009 23:58:55:097] [invoice = abc1234]
+[05:05:2009 23:58:55:113] [charset = windows-1252]
+[05:05:2009 23:58:55:113] [verify_sign = AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc]
+[05:05:2009 23:58:55:113] [cmd = _notify-validate]
+[05:05:2009 23:58:55:113] VERIFIED
+[05:05:2009 23:58:55:113] processVerifiedPayment started
+[05:05:2009 23:58:55:113] wasPaymentAlreadyProcessed for txn_id = 12
+[05:05:2009 23:58:55:879]  = select number from customer where txn_id = '12';
+[05:05:2009 23:58:55:894] contact@jewelleryonpc.com
+[05:05:2009 23:58:55:894] Receiver email from config is: contact@jewelleryonpc.com
+[05:05:2009 23:58:55:910] getProductAmount for: [ringonpcbirthstone,1.0]
+[05:05:2009 23:58:55:910] strSqlStatement is: SELECT price FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:58:55:941] 120.00 = SELECT price FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:58:55:941] DB Amount of payment should be: 120
+[05:05:2009 23:58:55:941] getProductCurrency for: [ringonpcbirthstone,1.0]
+[05:05:2009 23:58:55:941] strSqlStatement is: SELECT currency FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:58:55:941] USD = SELECT currency FROM ImageFile where productname = 'ringonpcbirthstone' AND productversion = '1.0';
+[05:05:2009 23:58:55:957] Amount of payment is: 120
+[05:05:2009 23:58:55:957] payed ok in the righrt currency
+[05:05:2009 23:58:55:957] cust.writeToDataBase call
+[05:05:2009 23:58:56:004] Exception inserting data: String or binary data would be truncated.
+The statement has been terminated.
+[05:05:2009 23:58:56:004] cust.writeToDataBase done
+[05:05:2009 23:58:56:019] cust.atachLicense call
+[05:05:2009 23:58:56:050] cust.atachLicense done
+[05:05:2009 23:58:56:050] email.send call
+[05:05:2009 23:58:56:066] Create email started
+[05:05:2009 23:58:56:113] 44 = select id from License WHERE  productid = '1241524736';
+[05:05:2009 23:58:56:113] Createemail ended
+[05:05:2009 23:58:56:113] strSmtpServer = smtp.xtra.co.nz
+[05:05:2009 23:58:56:160] this is DEV 
+[05:05:2009 23:58:56:160] client.Host = smtp.xtra.co.nz
+[05:05:2009 23:58:56:175] strCredentialsUser = helenw.williams@xtra.co.nz
+[05:05:2009 23:58:56:175] strCredentialsPassword = 
+[05:05:2009 23:58:56:175] try to send email
+[05:05:2009 23:58:56:379] email sent
+[05:05:2009 23:58:56:379] email.send done
+[05:05:2009 23:58:56:379] email.send ok
+[05:05:2009 23:59:39:566] DownloadInstallerMSI page load start
+[05:05:2009 23:59:39:566] Request: [12,44,1241524736,]
+[05:05:2009 23:59:39:566] DownloadInstaller created
+[05:05:2009 23:59:39:566] strPage != 0 = 
+[05:05:2009 23:59:39:566] isValidDateIntervalForDownload start
+[05:05:2009 23:59:39:566] strSqlStatement =  SELECT DATEDIFF(hour, (SELECT emaildate  FROM License  WHERE id = '44 '), CURRENT_TIMESTAMP) FROM License;
+[05:05:2009 23:59:39:754] 0 =  SELECT DATEDIFF(hour, (SELECT emaildate  FROM License  WHERE id = '44 '), CURRENT_TIMESTAMP) FROM License;
+[05:05:2009 23:59:39:754] strDifference = 0
+[05:05:2009 23:59:39:754] isValidDateIntervalForDownload end, return true
+[05:05:2009 23:59:39:754] presents the download link: url = cid=12&lid=44&pid=1241524736
+[05:05:2009 23:59:41:910] DownloadInstallerMSI page load start
+[05:05:2009 23:59:41:910] Request: [12,44,1241524736,0]
+[05:05:2009 23:59:41:910] DownloadInstaller created
+[05:05:2009 23:59:41:910] isValidLicense start
+[05:05:2009 23:59:41:925] 44 = SELECT id FROM License where customerid = '12'AND productid = '1241524736';
+[05:05:2009 23:59:41:925] strId = m_strLicenseId = 44
+[05:05:2009 23:59:41:925] isLicenseValid? = True
+[05:05:2009 23:59:41:925] license is valid, load and send the file = 
+[05:05:2009 23:59:41:957] loadAndSendFile start
+[05:05:2009 23:59:41:957] isValidDateIntervalForDownload start
+[05:05:2009 23:59:41:972] strSqlStatement =  SELECT DATEDIFF(hour, (SELECT emaildate  FROM License  WHERE id = '44 '), CURRENT_TIMESTAMP) FROM License;
+[05:05:2009 23:59:41:972] 0 =  SELECT DATEDIFF(hour, (SELECT emaildate  FROM License  WHERE id = '44 '), CURRENT_TIMESTAMP) FROM License;
+[05:05:2009 23:59:41:972] strDifference = 0
+[05:05:2009 23:59:41:972] isValidDateIntervalForDownload end, return true
+[05:05:2009 23:59:41:972] isValidDate? = True
+[05:05:2009 23:59:41:972] getFilePath start
+[05:05:2009 23:59:41:988] getProductName end
+[05:05:2009 23:59:41:988] strSqlStatement = SELECT productname from License WHERE id = '44';
+[05:05:2009 23:59:42:004] ringonpcbirthstone = SELECT productname from License WHERE id = '44';
+[05:05:2009 23:59:42:004] strProductName = ringonpcbirthstone
+[05:05:2009 23:59:42:004] getProductName end
+[05:05:2009 23:59:42:004] getProductVersion start
+[05:05:2009 23:59:42:004] strSqlStatement = SELECT productversion from License WHERE id = '44';
+[05:05:2009 23:59:42:019] 1.0 = SELECT productversion from License WHERE id = '44';
+[05:05:2009 23:59:42:019] strProductVersion = 1.0
+[05:05:2009 23:59:42:019] getProductVersion end. strProductVersion  = 1.0
+[05:05:2009 23:59:42:035] sql statement =  select filepath from ImageFile  WHERE productname = 'ringonpcbirthstone'  AND productversion = '1.0'  AND active = 1;
+[05:05:2009 23:59:42:050] ~/App_Data/images/rb_image.1.0.bin =  select filepath from ImageFile  WHERE productname = 'ringonpcbirthstone'  AND productversion = '1.0'  AND active = 1;
+[05:05:2009 23:59:42:050] getFilePath end. strPath = ~/App_Data/images/rb_image.1.0.bin
+[05:05:2009 23:59:42:066] getFileRealName start
+[05:05:2009 23:59:42:066] getProductName end
+[05:05:2009 23:59:42:066] strSqlStatement = SELECT productname from License WHERE id = '44';
+[05:05:2009 23:59:42:082] ringonpcbirthstone = SELECT productname from License WHERE id = '44';
+[05:05:2009 23:59:42:082] strProductName = ringonpcbirthstone
+[05:05:2009 23:59:42:082] getProductName end
+[05:05:2009 23:59:42:082] getProductVersion start
+[05:05:2009 23:59:42:082] strSqlStatement = SELECT productversion from License WHERE id = '44';
+[05:05:2009 23:59:42:082] 1.0 = SELECT productversion from License WHERE id = '44';
+[05:05:2009 23:59:42:082] strProductVersion = 1.0
+[05:05:2009 23:59:42:082] getProductVersion end. strProductVersion  = 1.0
+[05:05:2009 23:59:42:082] strSqlStatement =  select filename from ImageFile  WHERE productname = 'ringonpcbirthstone' AND productversion = '1.0' AND active = 1;
+[05:05:2009 23:59:42:097] RingonpcBirthstone.1.0 =  select filename from ImageFile  WHERE productname = 'ringonpcbirthstone' AND productversion = '1.0' AND active = 1;
+[05:05:2009 23:59:42:097] strRealName = RingonpcBirthstone.1.0
+[05:05:2009 23:59:42:097] getFileRealName end; strRealName = RingonpcBirthstone.1.0.Setup.msi
+[05:05:2009 23:59:42:097] filePath = ~/App_Data/images/rb_image.1.0.bin
+[05:05:2009 23:59:55:441] DownloadInstallerMSI page load start
+[05:05:2009 23:59:55:441] Request: [12,44,1241524736,0]
+[05:05:2009 23:59:55:441] DownloadInstaller created
+[05:05:2009 23:59:55:441] isValidLicense start
+[05:05:2009 23:59:55:441] 44 = SELECT id FROM License where customerid = '12'AND productid = '1241524736';
+[05:05:2009 23:59:55:441] strId = m_strLicenseId = 44
+[05:05:2009 23:59:55:441] isLicenseValid? = True
+[05:05:2009 23:59:55:441] license is valid, load and send the file = 
+[05:05:2009 23:59:55:441] loadAndSendFile start
+[05:05:2009 23:59:55:441] isValidDateIntervalForDownload start
+[05:05:2009 23:59:55:457] strSqlStatement =  SELECT DATEDIFF(hour, (SELECT emaildate  FROM License  WHERE id = '44 '), CURRENT_TIMESTAMP) FROM License;
+[05:05:2009 23:59:55:457] 0 =  SELECT DATEDIFF(hour, (SELECT emaildate  FROM License  WHERE id = '44 '), CURRENT_TIMESTAMP) FROM License;
+[05:05:2009 23:59:55:457] strDifference = 0
+[05:05:2009 23:59:55:457] isValidDateIntervalForDownload end, return true
+[05:05:2009 23:59:55:457] isValidDate? = True
+[05:05:2009 23:59:55:457] getFilePath start
+[05:05:2009 23:59:55:457] getProductName end
+[05:05:2009 23:59:55:457] strSqlStatement = SELECT productname from License WHERE id = '44';
+[05:05:2009 23:59:55:457] ringonpcbirthstone = SELECT productname from License WHERE id = '44';
+[05:05:2009 23:59:55:472] strProductName = ringonpcbirthstone
+[05:05:2009 23:59:55:472] getProductName end
+[05:05:2009 23:59:55:472] getProductVersion start
+[05:05:2009 23:59:55:472] strSqlStatement = SELECT productversion from License WHERE id = '44';
+[05:05:2009 23:59:55:472] 1.0 = SELECT productversion from License WHERE id = '44';
+[05:05:2009 23:59:55:472] strProductVersion = 1.0
+[05:05:2009 23:59:55:472] getProductVersion end. strProductVersion  = 1.0
+[05:05:2009 23:59:55:472] sql statement =  select filepath from ImageFile  WHERE productname = 'ringonpcbirthstone'  AND productversion = '1.0'  AND active = 1;
+[05:05:2009 23:59:55:472] ~/App_Data/images/rb_image.1.0.bin =  select filepath from ImageFile  WHERE productname = 'ringonpcbirthstone'  AND productversion = '1.0'  AND active = 1;
+[05:05:2009 23:59:55:472] getFilePath end. strPath = ~/App_Data/images/rb_image.1.0.bin
+[05:05:2009 23:59:55:472] getFileRealName start
+[05:05:2009 23:59:55:472] getProductName end
+[05:05:2009 23:59:55:488] strSqlStatement = SELECT productname from License WHERE id = '44';
+[05:05:2009 23:59:55:488] ringonpcbirthstone = SELECT productname from License WHERE id = '44';
+[05:05:2009 23:59:55:488] strProductName = ringonpcbirthstone
+[05:05:2009 23:59:55:488] getProductName end
+[05:05:2009 23:59:55:488] getProductVersion start
+[05:05:2009 23:59:55:488] strSqlStatement = SELECT productversion from License WHERE id = '44';
+[05:05:2009 23:59:55:488] 1.0 = SELECT productversion from License WHERE id = '44';
+[05:05:2009 23:59:55:488] strProductVersion = 1.0
+[05:05:2009 23:59:55:488] getProductVersion end. strProductVersion  = 1.0
+[05:05:2009 23:59:55:488] strSqlStatement =  select filename from ImageFile  WHERE productname = 'ringonpcbirthstone' AND productversion = '1.0' AND active = 1;
+[05:05:2009 23:59:55:504] RingonpcBirthstone.1.0 =  select filename from ImageFile  WHERE productname = 'ringonpcbirthstone' AND productversion = '1.0' AND active = 1;
+[05:05:2009 23:59:55:504] strRealName = RingonpcBirthstone.1.0
+[05:05:2009 23:59:55:504] getFileRealName end; strRealName = RingonpcBirthstone.1.0.Setup.msi
+[05:05:2009 23:59:55:504] filePath = ~/App_Data/images/rb_image.1.0.bin
+[06:05:2009 00:03:48:504] PageLoad
+[06:05:2009 00:03:48:535] strPayPalUrl = https://www.sandbox.paypal.com/cgi-bin/webscr
+[06:05:2009 00:03:48:535] IS development
+[06:05:2009 00:03:48:535] Dev strRequest = test_ipn=1&payment_type=instant&payment_date=18%3A36%3A53+Jan.+26%2C+2009+PST&payment_status=Completed&payer_status=verified&first_name=John&last_name=Smith&payer_email=teodor%40xtra.co.nz&payer_id=TESTBUYERID01&business=teodor%40xtra.co.nz&receiver_email=teodor%40xtra.co.nz&receiver_id=TESTSELLERID1&residence_country=US&item_name=ItemName&item_number=AK-1234&quantity=1&tax=2.02&mc_currency=USD&mc_fee=0.44&mc_gross=15.34&mc_gross1=12.34&mc_handling=2.06&mc_handling1=1.67&mc_shipping=3.02&mc_shipping1=1.02&txn_type=cart&txn_id=53127236&notify_version=2.4&custom=xyz123&invoice=abc1234&charset=windows-1252&verify_sign=AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc&cmd=_notify-validate
+[06:05:2009 00:03:50:597] strResponse = VERIFIED
+[06:05:2009 00:03:50:597] [test_ipn = 1]
+[06:05:2009 00:03:50:597] [payment_type = instant]
+[06:05:2009 00:03:50:597] [payment_date = 18%3A36%3A53+Jan.+26%2C+2009+PST]
+[06:05:2009 00:03:50:597] [payment_status = Completed]
+[06:05:2009 00:03:50:597] [payer_status = verified]
+[06:05:2009 00:03:50:597] [first_name = Helen]
+[06:05:2009 00:03:50:597] [last_name = Williams]
+[06:05:2009 00:03:50:597] [payer_email = helenw.williams@xtra.co.nz]
+[06:05:2009 00:03:50:597] [payer_id = TESTBUYERID01]
+[06:05:2009 00:03:50:613] [business = business name]
+[06:05:2009 00:03:50:613] [receiver_email = contact@jewelleryonpc.com]
+[06:05:2009 00:03:50:613] [receiver_id = TESTSELLERID1]
+[06:05:2009 00:03:50:613] [residence_country = US]
+[06:05:2009 00:03:50:613] [item_name = ringonpcbirthstone]
+[06:05:2009 00:03:50:613] [item_number = 1.0]
+[06:05:2009 00:03:50:613] [quantity = 1]
+[06:05:2009 00:03:50:613] [tax = 2.02]
+[06:05:2009 00:03:50:613] [mc_currency = USD]
+[06:05:2009 00:03:50:613] [mc_fee = 0.44]
+[06:05:2009 00:03:50:613] [mc_gross = 120.00]
+[06:05:2009 00:03:50:613] [mc_gross1 = 12.34]
+[06:05:2009 00:03:50:613] [mc_handling = 2.06]
+[06:05:2009 00:03:50:613] [mc_handling1 = 1.67]
+[06:05:2009 00:03:50:629] [mc_shipping = 3.02]
+[06:05:2009 00:03:50:629] [mc_shipping1 = 1.02]
+[06:05:2009 00:03:50:629] [txn_type = cart]
+[06:05:2009 00:03:50:629] [txn_id = 122]
+[06:05:2009 00:03:50:629] [notify_version = 2.4]
+[06:05:2009 00:03:50:629] [custom = xyz123]
+[06:05:2009 00:03:50:629] [invoice = abc1234]
+[06:05:2009 00:03:50:629] [charset = windows-1252]
+[06:05:2009 00:03:50:629] [verify_sign = AVpeML361chUtRBQ48IYKP.PoLJIABQkl3lLa.7uTndxeDz7.kmUQYcc]
+[06:05:2009 00:03:50:629] [cmd = _notify-validate]
+[06:05:2009 00:03:50:629] VERIFIED
+[06:05:2009 00:03:50:629] processVerifiedPayment started
+[06:05:2009 00:03:50:629] wasPaymentAlreadyProcessed for txn_id = 122
+[06:05:2009 00:03:50:644]  = select number from customer where txn_id = '122';
+[06:05:2009 00:03:50:644] contact@jewelleryonpc.com
+[06:05:2009 00:03:50:644] Receiver email from config is: contact@jewelleryonpc.com
+
+----------------start run -------------------------
+[23:05:2009 18:59:51:375] 
+
+----------------start run -------------------------
+[23:05:2009 19:05:25:734] [__LASTFOCUS = ]
+[__EVENTTARGET = ]
+[__EVENTARGUMENT = ]
+[__VIEWSTATE = /wEPDwUKMjAyMzY0Njc2MQ9kFgJmD2QWAgIDD2QWBgILDzwrAA0CAA8WAh4LXyFEYXRhQm91bmRnZAwUKwACBQMwOjAUKwACFhIeBVZhbHVlBQRIb21lHglEYXRhQm91bmRnHghTZWxlY3RlZGgeBFRleHQFBEhvbWUeC05hdmlnYXRlVXJsBQ0vRGVmYXVsdC5hc3B4HgdFbmFibGVkZx4KU2VsZWN0YWJsZWceB1Rvb2xUaXAFCUhvbWUgcGFnZR4IRGF0YVBhdGgFDS9kZWZhdWx0LmFzcHgUKwAFBQ8wOjAsMDoxLDA6MiwwOjMUKwACFhAfBAUIUmluZ29ucGMfAQUIUmluZ29ucGMfBQUWL1JpbmdvbnBjL0RlZmF1bHQuYXNweB8IBQhSaW5nb25wYx8GZx8HZx8JBRYvcmluZ29ucGMvZGVmYXVsdC5hc3B4HwJnZBQrAAIWEB8EBQNCdXkfAQUDQnV5HwUFES9CdXkvRGVmYXVsdC5hc3B4HwgFC0J1eSBvcHRpb25zHwZnHwdnHwkFES9idXkvZGVmYXVsdC5hc3B4HwJnZBQrAAIWEB8EBQdJbnN0YWxsHwEFB0luc3RhbGwfBQUVL0luc3RhbGwvRGVmYXVsdC5hc3B4HwgFB0luc3RhbGwfBmcfB2cfCQUVL2luc3RhbGwvZGVmYXVsdC5hc3B4HwJnZBQrAAIWEh8BBQdDb250YWN0HwJnHwNnHwQFB0NvbnRhY3QfBQUNL0NvbnRhY3QuYXNweB8GZx8HZx8IBQpDb250YWN0IFVzHwkFDS9jb250YWN0LmFzcHhkZAITDzwrAA0BAA8WAh8AZ2RkAhUPZBYCAhEPZBYCZg9kFgICDQ8QDxYCHgdDaGVja2VkaGRkZGQYAgUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFImN0bDAwJGxlZnRDb2x1bW4kTG9naW4xJFJlbWVtYmVyTWUFDmN0bDAwJG1haW5tZW51Dw9kBQxIb21lXENvbnRhY3Rk5SqIJrrdE0jmxOnQU77Gk/vooBU=]
+[ctl00$mainCopy$txtName = teo]
+[ctl00$mainCopy$txtEmail = teodor@xtra.co.nz]
+[ctl00$mainCopy$rblImportance = low]
+[ctl00$mainCopy$txtMessage = this is the message, low, sure]
+[ctl00$mainCopy$rblSubscribe = true]
+[ctl00$mainCopy$btnSubmit = Send]
+[__EVENTVALIDATION = /wEWEgK+w5fqBgLE5ML0AgL9n+COAgLTnrDxBAK1gO1tAp30ycMMAoGQm5YFAsngptEDAsa15MIEAvXDwpMPAre19aMLAtPlre8LApratNcFAqDawXsCiOj2wAQC96/y+QcCk9+GngkC/6vI/AmQOCrz56SGTM14CPz5HeK1HrtEKw==]
+
+[23:05:2009 19:06:09:046] [__LASTFOCUS = ]
+[__EVENTTARGET = ]
+[__EVENTARGUMENT = ]
+[__VIEWSTATE = /wEPDwUKMjAyMzY0Njc2MQ9kFgJmD2QWAgIDD2QWBgILDzwrAA0CAA8WAh4LXyFEYXRhQm91bmRnZAwUKwACBQMwOjAUKwACFhIeBVZhbHVlBQRIb21lHglEYXRhQm91bmRnHghTZWxlY3RlZGgeBFRleHQFBEhvbWUeC05hdmlnYXRlVXJsBQ0vRGVmYXVsdC5hc3B4HgdFbmFibGVkZx4KU2VsZWN0YWJsZWceB1Rvb2xUaXAFCUhvbWUgcGFnZR4IRGF0YVBhdGgFDS9kZWZhdWx0LmFzcHgUKwAFBQ8wOjAsMDoxLDA6MiwwOjMUKwACFhAfBAUIUmluZ29ucGMfAQUIUmluZ29ucGMfBQUWL1JpbmdvbnBjL0RlZmF1bHQuYXNweB8IBQhSaW5nb25wYx8GZx8HZx8JBRYvcmluZ29ucGMvZGVmYXVsdC5hc3B4HwJnZBQrAAIWEB8EBQNCdXkfAQUDQnV5HwUFES9CdXkvRGVmYXVsdC5hc3B4HwgFC0J1eSBvcHRpb25zHwZnHwdnHwkFES9idXkvZGVmYXVsdC5hc3B4HwJnZBQrAAIWEB8EBQdJbnN0YWxsHwEFB0luc3RhbGwfBQUVL0luc3RhbGwvRGVmYXVsdC5hc3B4HwgFB0luc3RhbGwfBmcfB2cfCQUVL2luc3RhbGwvZGVmYXVsdC5hc3B4HwJnZBQrAAIWEh8BBQdDb250YWN0HwJnHwNnHwQFB0NvbnRhY3QfBQUNL0NvbnRhY3QuYXNweB8GZx8HZx8IBQpDb250YWN0IFVzHwkFDS9jb250YWN0LmFzcHhkZAITDzwrAA0BAA8WAh8AZ2RkAhUPZBYCAhEPZBYCZg9kFgICDQ8QDxYCHgdDaGVja2VkaGRkZGQYAgUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFImN0bDAwJGxlZnRDb2x1bW4kTG9naW4xJFJlbWVtYmVyTWUFDmN0bDAwJG1haW5tZW51Dw9kBQxIb21lXENvbnRhY3Rk5SqIJrrdE0jmxOnQU77Gk/vooBU=]
+[ctl00$mainCopy$txtName = ]
+[ctl00$mainCopy$txtEmail = ]
+[ctl00$mainCopy$rblImportance = normal]
+[ctl00$mainCopy$txtMessage = ]
+[ctl00$mainCopy$rblSubscribe = true]
+[ctl00$mainCopy$btnSubmit = Send]
+[__EVENTVALIDATION = /wEWEgK+w5fqBgLE5ML0AgL9n+COAgLTnrDxBAK1gO1tAp30ycMMAoGQm5YFAsngptEDAsa15MIEAvXDwpMPAre19aMLAtPlre8LApratNcFAqDawXsCiOj2wAQC96/y+QcCk9+GngkC/6vI/AmQOCrz56SGTM14CPz5HeK1HrtEKw==]
+
+
+----------------start run -------------------------
+[23:05:2009 19:56:37:453] ContactUs.createEmail started
+[23:05:2009 19:56:37:515] ContactUs.createEmail ended
+[23:05:2009 19:56:37:515] strSmtpServer = 
+[23:05:2009 19:56:38:406] this is PROD 
+[23:05:2009 19:56:38:437] client.Host = mail.jewelleryonpc.com
+[23:05:2009 19:56:38:437] strCredentialsUser = contact@jewelleryonpc.com
+[23:05:2009 19:56:38:468] strCredentialsPassword = password01
+[23:05:2009 19:56:38:531] try to send email
+[23:05:2009 19:56:40:328] email sent
+
+----------------start run -------------------------
+[23:05:2009 19:59:11:328] ContactUs.createEmail started
+[23:05:2009 19:59:29:625] ContactUs.createEmail ended
+[23:05:2009 19:59:34:515] strSmtpServer = 
+[23:05:2009 19:59:45:046] this is PROD 
+[23:05:2009 19:59:45:093] client.Host = mail.jewelleryonpc.com
+[23:05:2009 19:59:45:125] strCredentialsUser = contact@jewelleryonpc.com
+[23:05:2009 19:59:45:156] strCredentialsPassword = password01
+[23:05:2009 19:59:45:187] try to send email
+[23:05:2009 19:59:47:031] email sent
+
+----------------start run -------------------------
+[23:05:2009 20:00:46:140] ContactUs.createEmail started
+[23:05:2009 20:00:46:187] ContactUs.createEmail ended
+[23:05:2009 20:00:46:187] strSmtpServer = 
+[23:05:2009 20:00:46:671] this is DEV 
+[23:05:2009 20:00:46:671] client.Host = smtp.xtra.co.nz
+[23:05:2009 20:00:46:687] strCredentialsUser = helenw.williams@xtra.co.nz
+[23:05:2009 20:00:46:703] strCredentialsPassword = 
+[23:05:2009 20:00:46:781] try to send email
+[23:05:2009 20:00:47:171] email sent
+
+----------------start run -------------------------
+[23:05:2009 20:07:03:953] ContactUs.createEmail started
+[23:05:2009 20:07:04:046] ContactUs.createEmail ended
+[23:05:2009 20:07:04:046] strSmtpServer = 
+[23:05:2009 20:07:04:484] this is DEV 
+[23:05:2009 20:07:04:484] client.Host = smtp.xtra.co.nz
+[23:05:2009 20:07:04:500] strCredentialsUser = helenw.williams@xtra.co.nz
+[23:05:2009 20:07:04:500] strCredentialsPassword = 
+[23:05:2009 20:07:04:515] try to send email
+[23:05:2009 20:07:04:984] email sent
+
+----------------start run -------------------------
+[23:05:2009 20:11:05:843] ContactUs.createEmail started
+[23:05:2009 20:11:05:921] ContactUs.createEmail ended
+[23:05:2009 20:11:05:921] strSmtpServer = 
+[23:05:2009 20:11:06:265] this is DEV 
+[23:05:2009 20:11:06:265] client.Host = smtp.xtra.co.nz
+[23:05:2009 20:11:06:281] strCredentialsUser = helenw.williams@xtra.co.nz
+[23:05:2009 20:11:06:281] strCredentialsPassword = 
+[23:05:2009 20:11:06:296] try to send email
+[23:05:2009 20:11:06:750] email sent
+[23:05:2009 20:11:48:359] ContactUs.createEmail started
+[23:05:2009 20:11:48:359] ContactUs.createEmail ended
+[23:05:2009 20:11:48:359] strSmtpServer = 
+[23:05:2009 20:11:48:468] this is DEV 
+[23:05:2009 20:11:48:562] client.Host = smtp.xtra.co.nz
+[23:05:2009 20:11:48:562] strCredentialsUser = helenw.williams@xtra.co.nz
+[23:05:2009 20:11:48:718] strCredentialsPassword = 
+[23:05:2009 20:11:48:734] try to send email
+[23:05:2009 20:11:48:781] email sent
+
+----------------start run -------------------------
+[03:06:2009 21:51:19:390] ContactUs.createEmail started
+[03:06:2009 21:51:19:484] ContactUs.createEmail ended
+[03:06:2009 21:51:19:484] strSmtpServer = 
+[03:06:2009 21:51:19:906] this is DEV 
+[03:06:2009 21:51:19:906] client.Host = smtp.xtra.co.nz
+[03:06:2009 21:51:19:921] strCredentialsUser = helenw.williams@xtra.co.nz
+[03:06:2009 21:51:19:921] strCredentialsPassword = 
+[03:06:2009 21:51:19:953] try to send email
+[03:06:2009 21:51:20:375] email sent
+
+----------------start run -------------------------
+[03:06:2009 22:01:57:062] ContactUs.createEmail started
+[03:06:2009 22:01:57:203] ContactUs.createEmail ended
+[03:06:2009 22:01:57:250] strSmtpServer = 
+[03:06:2009 22:01:57:843] this is DEV 
+[03:06:2009 22:01:57:843] client.Host = smtp.xtra.co.nz
+[03:06:2009 22:01:57:859] strCredentialsUser = helenw.williams@xtra.co.nz
+[03:06:2009 22:01:57:859] strCredentialsPassword = 
+[03:06:2009 22:01:57:890] try to send email
+[03:06:2009 22:01:58:328] email sent
+[03:06:2009 22:01:58:328] loadAndSendDemoFile start
+[03:06:2009 22:01:58:328] filePath = ~/App_Data/images/RingonpcbirthstoneDemoSetup.msi
+
+----------------start run -------------------------
+[03:06:2009 22:32:27:640] ContactUs.createEmail started
+[03:06:2009 22:32:27:703] ContactUs.createEmail ended
+[03:06:2009 22:32:27:703] strSmtpServer = 
+[03:06:2009 22:32:28:109] this is DEV 
+[03:06:2009 22:32:28:125] client.Host = smtp.xtra.co.nz
+[03:06:2009 22:32:28:125] strCredentialsUser = helenw.williams@xtra.co.nz
+[03:06:2009 22:32:28:140] strCredentialsPassword = 
+[03:06:2009 22:32:28:187] try to send email
+[03:06:2009 22:32:28:562] email sent
+[03:06:2009 22:32:28:578] loadAndSendDemoFile start
+[03:06:2009 22:32:28:578] filePath = ~/App_Data/images/RingonpcbirthstoneDemoSetup.msi
+
+----------------start run -------------------------
+[03:06:2009 22:50:11:843] ContactUs.createEmail started
+[03:06:2009 22:50:11:921] ContactUs.createEmail ended
+[03:06:2009 22:50:11:937] strSmtpServer = 
+[03:06:2009 22:50:12:296] this is DEV 
+[03:06:2009 22:50:12:296] client.Host = smtp.xtra.co.nz
+[03:06:2009 22:50:12:312] strCredentialsUser = helenw.williams@xtra.co.nz
+[03:06:2009 22:50:12:312] strCredentialsPassword = 
+[03:06:2009 22:50:12:328] try to send email
+[03:06:2009 22:50:12:609] email sent
+[03:06:2009 22:50:12:609] loadAndSendDemoFile start
+[03:06:2009 22:50:12:609] filePath = ~/App_Data/images/RingonpcbirthstoneDemoSetup.msi
