@@ -15,6 +15,7 @@ cppunit for unit tests<br/>
 classes wrap the opengl functions and enums<br/>
 
 <br/>
+
 ## Exceptions handling<br/>
 	__try<br/>
 	{<br/>
