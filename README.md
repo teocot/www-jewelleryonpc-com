@@ -1,9 +1,10 @@
 # demo 
 RingonpcbirthstoneDemoSetup.msi </br>
-https://github.com/teocot/www-jewelleryonpc-com/raw/master/RingonpcbirthstoneDemoSetup.msi
+https://github.com/teocot/www-jewelleryonpc-com/raw/master/RingonpcbirthstoneDemoSetup.msi</br>
 
 # www-jewelleryonpc-com
-website for the ringonpcbirthstone software
+website for the ringonpcbirthstone software, some code extracts</br>
+
 # cpp-src
 some cpp source code which is part of the birthstone software<br/>
 it shows libs ans tests of those libs, grouping of libraries <br/><br/>
