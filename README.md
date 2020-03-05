@@ -29,7 +29,7 @@ classes wrap the opengl functions and enums<br/>
 	}<br/>
   
  ## Smart pointer <br/>
- gc_ptr<JMaterial> pMetal = new Metal;<br/>
- gc_ptr<JMaterial> pGemstone = pGemstoneList->getGemstone(strStartDirectory,strGemstoneName);<br/>
+ gc_ptr\<JMaterial\> pMetal = new Metal; // Metal is a JMaterial <br/> 
+ gc_ptr\<JMaterial\> pGemstone = pGemstoneList->getGemstone(strStartDirectory,strGemstoneName);<br/>
  pMetal->setMaterial(pGemstone);
 	
