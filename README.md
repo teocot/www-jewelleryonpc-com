@@ -15,7 +15,7 @@ cppunit for unit tests<br/>
 classes wrap the opengl functions and enums<br/>
 
 <br/>
-Exceptions handling<br/>
+## Exceptions handling<br/>
 	__try<br/>
 	{<br/>
 		m_descriptionControls.importFromFile(strDescriptionFileName);<br/>
@@ -27,4 +27,8 @@ Exceptions handling<br/>
 		goto cleanup;<br/>
 	}<br/>
   
- 
+ ## Smart pointer <br/>
+ gc_ptr<JMaterial> pMetal = new Metal;<br/>
+ gc_ptr<JMaterial> pGemstone = pGemstoneList->getGemstone(strStartDirectory,strGemstoneName);<br/>
+ pMetal->setMaterial(pGemstone);
+	
